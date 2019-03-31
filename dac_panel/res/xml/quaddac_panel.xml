@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="quaddac_switch"
+        android:summaryOn="@string/quad_dac_on"
+        android:summaryOff="@string/quad_dac_off"
+        android:title="@string/quad_dac" />
+
+    <PreferenceCategory
+        android:title="@string/quad_dac_settings" >
+
+        <!--<ListPreference
+            android:key="hifi_dop_dropdown"
+            android:title="@string/hifi_mode"
+            android:summary="%s"
+            android:entries="@array/hifi_mode_entry_values"
+            android:entryValues="@array/hifi_mode_entry_values"
+            android:defaultValue="@string/hifi_mode_normal" />-->
+
+        <!--<ListPreference
+            android:key="sound_preset_dropdown"
+            android:title="@string/sound_preset"
+            android:summary="%s"
+            android:entries="@array/sound_preset_entry_values"
+            android:entryValues="@array/sound_preset_entry_values"
+            android:enabled="false"/> -->
+
+        <!--<ListPreference
+            android:key="digital_filter_dropdown"
+            android:title="@string/digital_filter"
+            android:summary="%s"
+            android:entries="@array/digital_filter_entry_values"
+            android:entryValues="@array/digital_filter_entry_values" />-->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/quad_dac_balance" >
+
+        <org.lineageos.settings.device.dac.ui.BalancePreference
+            android:key="balance"
+            android:summary="@string/quad_dac_balance_summary"
+            android:title="@string/quad_dac_balance" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+

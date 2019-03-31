@@ -1,0 +1,10 @@
+# rootfs
+type adsprpcd_file, file_type;
+type ftm_file, file_type;
+type misc_file, file_type;
+type firmware_file, file_type;
+type persdata_file, file_type;
+type vzw_file, file_type;
+type persist_file, file_type;
+type carrier_file, file_type;
+

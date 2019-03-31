@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sound_preset_entry_values" translatable="false">
+        <item>@string/sound_preset_normal</item>
+        <item>@string/sound_preset_enhanced</item>
+        <item>@string/sound_preset_detailed</item>
+        <item>@string/sound_preset_live</item>
+        <item>@string/sound_preset_bass</item>
+    </string-array>
+
+    <string-array name="digital_filter_entry_values" translatable="false">
+        <item>@string/digital_filter_short</item>
+        <item>@string/digital_filter_sharp</item>
+        <item>@string/digital_filter_slow</item>
+    </string-array>
+
+    <string-array name="hifi_mode_entry_values" translatable="false">
+        <item>@string/hifi_mode_normal</item>
+        <item>@string/hifi_mode_him</item>
+        <item>@string/hifi_mode_aux</item>
+    </string-array>
+
+</resources>
+
+
+
