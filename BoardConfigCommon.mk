@@ -82,7 +82,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 NEED_KERNEL_MODULE_SYSTEM := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_SOURCE := kernel/lge/sdm845
+#TARGET_KERNEL_SOURCE := kernel/lge/sdm845
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # Partitions
@@ -114,11 +114,9 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
-# Treble
-BOARD_VNDK_VERSION := current
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
 # Inherit from the proprietary version
 -include vendor/lge/sdm845-common/BoardConfigVendor.mk
