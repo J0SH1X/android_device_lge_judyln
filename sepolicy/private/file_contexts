@@ -7,3 +7,4 @@
 /vzw(/.*)?               u:object_r:vzw_file:s0
 /persist(/.*)?           u:object_r:persist_file:s0
 /carrier(/.*)?           u:object_r:carrier_file:s0
+/eri(/.*)?               u:object_r:eri_file:s0

@@ -7,4 +7,4 @@ type persdata_file, file_type;
 type vzw_file, file_type;
 type persist_file, file_type;
 type carrier_file, file_type;
-
+type eri_file, file_type;
