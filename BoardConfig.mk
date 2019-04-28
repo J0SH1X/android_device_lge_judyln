@@ -43,6 +43,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judypn
 
+# Sepolicy
+BOARD_SEPOLICY_VERS := 27.0
+
 # Treble
 BOARD_VNDK_VERSION := current
 
