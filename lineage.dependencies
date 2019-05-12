@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_device_lge_sdm845-common",
+    "target_path": "device/lge/sdm845-common"
+  }
+]
