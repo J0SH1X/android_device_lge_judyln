@@ -1,0 +1,42 @@
+<resources>
+    <string name="summary_empty" translatable="false"></string>
+
+    <string name="quad_dac_app_name">Quad DAC Panel</string>
+
+    <string name="quad_dac">Hi-Fi Quad DAC</string>
+    <string name="quad_dac_on">Quad DAC on</string>
+    <string name="quad_dac_off">Quad DAC off</string>
+    <string name="quad_dac_unavail">Quad DAC unavailable</string>
+
+    <string name="quad_dac_settings">Quad DAC Settings</string>
+
+    <string name="quad_dac_balance">Balance</string>
+    <string name="quad_dac_balance_summary">Change the Left/Right balance</string>
+
+    <string name="sound_preset">Sound preset</string>
+
+    <string name="sound_preset_normal">Normal</string>
+    <string name="sound_preset_enhanced">Enhanced</string>
+    <string name="sound_preset_detailed">Detailed</string>
+    <string name="sound_preset_live">Live</string>
+    <string name="sound_preset_bass">Bass</string>
+
+    <string name="digital_filter">Digital filter</string>
+
+    <string name="digital_filter_short">Short</string>
+    <string name="digital_filter_sharp">Sharp</string>
+    <string name="digital_filter_slow">Slow</string>
+
+    <string name="empty_string"></string>
+
+    <string name="hifi_mode">HiFi mode</string>
+
+    <string name="hifi_mode_normal">Normal</string>
+    <string name="hifi_mode_him">High Impedance</string>
+    <string name="hifi_mode_aux">AUX</string>
+
+    <string name="avc_volume">AVC Volume</string>
+    <string name="avc_volume_summary">Amplifies volume</string>
+
+</resources>
+
