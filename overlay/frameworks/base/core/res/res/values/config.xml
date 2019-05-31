@@ -48,7 +48,6 @@
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
     <integer name="config_overrideHasPermanentMenuKey">2</integer>
-    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">false</bool>
     <bool name="config_dozeAfterScreenOff">true</bool>
     <bool name="config_showNavigationBar">true</bool>
     <bool name="skip_restoring_network_selection">true</bool>

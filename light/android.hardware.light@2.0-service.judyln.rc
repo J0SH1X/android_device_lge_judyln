@@ -11,6 +11,8 @@ on boot
     write /sys/devices/virtual/lg_rgb_led/use_patterns/setting 1
     chown system system /sys/class/leds/wled/brightness
     chmod 0664 /sys/class/leds/wled/brightness
+    chown system system /sys/devices/virtual/panel/brightness/hl_mode
+    chmod 664 /sys/devices/virtual/panel/brightness/hl_mode
 
 
 on property:sys.boot_completed=1

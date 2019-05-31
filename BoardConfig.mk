@@ -27,6 +27,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+#LineageHW
+BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
+
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
 TARGET_KERNEL_CONFIG := judyln_lao_com-perf_defconfig
