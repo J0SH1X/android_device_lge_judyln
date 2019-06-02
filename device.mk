@@ -15,11 +15,16 @@
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-DEVICE_PACKAGE_OVERLAYS += \
-    debice/lge/judyln/overlay
+#DEVICE_PACKAGE_OVERLAYS += \
+#    device/lge/judyln/overlay
 
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.judyln
+
+# NFC
+PRODUCT_COPY_FILES += \
+ device/lge/judyln/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
+ device/lge/judyln/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/lge/judyln/judyln-vendor.mk)
