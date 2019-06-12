@@ -1,0 +1,26 @@
+# mount point		fstype	device					device2				flags
+/boot			emmc	/dev/block/bootdevice/by-name/boot					flags=slotselect
+/system			ext4	/dev/block/bootdevice/by-name/system					flags=slotselect
+/system_image		emmc	/dev/block/bootdevice/by-name/system					flags=slotselect
+/vendor			ext4	/dev/block/bootdevice/by-name/vendor					flags=slotselect;display="Vendor";backup=1
+/vendor_image		emmc	/dev/block/bootdevice/by-name/vendor					flags=slotselect
+/data			ext4	/dev/block/bootdevice/by-name/userdata					flags=encryptable=/dev/block/bootdevice/by-name/encrypt
+/firmware		vfat	/dev/block/bootdevice/by-name/modem					flags=slotselect;display="Firmware";mounttodecrypt;fsflags=context=u:object_r:firmware_file:s0
+/misc			emmc	/dev/block/bootdevice/by-name/misc
+/modem			emmc	/dev/block/bootdevice/by-name/modem					flags=slotselect;backup=1;display="Modem"
+/dsp			emmc	/dev/block/bootdevice/by-name/dsp					flags=slotselect;backup=1;subpartitionof=/modem
+/efs1			emmc	/dev/block/bootdevice/by-name/modemst1					flags=backup=1;display=EFS
+/efs2			emmc	/dev/block/bootdevice/by-name/modemst2					flags=backup=1;subpartitionof=/efs1
+/efsc			emmc	/dev/block/bootdevice/by-name/fsc					flags=backup=1;subpartitionof=/efs1
+/efsg			emmc	/dev/block/bootdevice/by-name/fsg					flags=backup=1;subpartitionof=/efs1
+/persist		ext4	/dev/block/bootdevice/by-name/persist					flags=backup=1;display="Persist"
+/persist-lg		ext4	/dev/block/bootdevice/by-name/drm					flags=backup=1;display="Persist-LG";mounttodecrypt
+/OP			ext4	/dev/block/bootdevice/by-name/OP					flags=slotselect;backup=1;display="OP Configs";removable
+/OP_image		emmc	/dev/block/bootdevice/by-name/OP					flags=slotselect;removable;display="OP image";flashimg
+/laf			emmc	/dev/block/bootdevice/by-name/laf					flags=slotselect;backup=1;display="LAF / DL"
+/dtbo			emmc	/dev/block/bootdevice/by-name/dtbo					flags=slotselect;backup=1;display="DTBO"
+/vbmeta			emmc	/dev/block/bootdevice/by-name/vbmeta					flags=slotselect;backup=1;display="VBMETA"
+
+# Removable storage
+/usb-otg		vfat	/dev/block/sdh1 			/dev/block/sdh			flags=display="USB-OTG";storage;wipeingui;removable
+/external_sd		vfat	/dev/block/mmcblk0p1 			/dev/block/mmcblk0		flags=display="mSDcard";storage;wipeingui;removable;encryptable=/dev/block/bootdevice/by-name/encrypt
