@@ -55,6 +55,7 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
+BOARD_PREBUILT_TWRP := $(DEVICE_PATH)/ramdisk-twrp.img
 
 # inherit from the proprietary version
 -include vendor/lge/judyln/BoardConfigVendor.mk
