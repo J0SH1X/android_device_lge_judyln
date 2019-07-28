@@ -46,7 +46,7 @@ TARGET_VENDOR_DEVICE_NAME := judypn
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=judypn \
     PRODUCT_NAME=judypn_lao_eea \
-    PRIVATE_BUILD_DESC="judypn_lao_eea-user 8.1.0 OPM1.171019.026 1900910023231 release-keys"
+    PRIVATE_BUILD_DESC="judypn_lao_eea-user 9 PKQ1.190202.001 191441032161a release-keys"
 
-BUILD_FINGERPRINT="lge/judypn_lao_eea/judypn:8.1.0/OPM1.171019.026/1900910023231:user/release-keys"
+BUILD_FINGERPRINT="lge/judypn_lao_eea/judypn:9/PKQ1.190202.001/191441032161a:user/release-keys"
 
