@@ -432,3 +432,7 @@ vendor/firmware/a630_zap.mdt
 # Firmware (Leia)
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
+
+# Firmware (NFC)
+vendor/firmware/libpn553_fw_64.so:vendor/lib64/libpn553_fw_64.so
+vendor/firmware/libpn553_fw.so:vendor/lib/libpn553_fw.so
