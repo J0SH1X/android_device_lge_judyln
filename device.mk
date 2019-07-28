@@ -22,6 +22,10 @@ $(call inherit-product-if-exists, vendor/lge/judypn/judypn-vendor.mk)
 # common v30
 $(call inherit-product, device/lge/sdm845-common/sdm845.mk)
 
+# Properties
+-include $(DEVICE_PATH)/system_prop.mk
+-include $(DEVICE_PATH)/vendor_prop.mk
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
