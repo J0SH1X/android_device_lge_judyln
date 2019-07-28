@@ -47,4 +47,8 @@ $(foreach f,$(wildcard $(DEVICE_PATH)/rootdir/etc/init/*.rc),\
 $(foreach f,$(wildcard $(DEVICE_PATH)/rootdir/bin/*.sh),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/bin/$(notdir $f)))
 
+# IRSC
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+
 
