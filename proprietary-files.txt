@@ -620,3 +620,11 @@ vendor/etc/sensors/registry/registry/sensors_settings
 vendor/etc/sensors/registry/sns_reg_config
 vendor/etc/sensors/sns_reg_config
 
+# Thermal engine
+vendor/bin/thermal-engine
+vendor/lib64/libthermalclient.so
+vendor/lib/libthermalclient.so
+vendor/etc/thermal-engine-845.conf
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine-default.conf
+
