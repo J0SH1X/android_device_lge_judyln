@@ -226,6 +226,11 @@ vendor/lib64/camera/com.qti.tuned.sl556_tmus.bin
 vendor/lib64/camera/com.qti.tuned.sl846.bin
 vendor/lib64/camera/com.qti.tuned.sl846_tmus.bin
 
+# Configstore
+vendor/bin/hw/vendor.lge.hardware.configstore@1.0-service
+vendor/etc/init/vendor.lge.hardware.configstore@1.0-service.rc
+vendor/lib64/vendor.lge.hardware.configstore@1.0.so
+
 # Firmware (Audio)
 vendor/firmware/Tfa9872.cnt
 vendor/firmware/Tfa9872_ras.cnt
