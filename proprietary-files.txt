@@ -429,4 +429,6 @@ vendor/firmware/a630_zap.b02
 vendor/firmware/a630_zap.elf
 vendor/firmware/a630_zap.mdt
 
-
+# Firmware (Leia)
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
