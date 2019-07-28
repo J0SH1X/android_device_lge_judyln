@@ -19,8 +19,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/lge/judypn/judypn-vendor.mk)
 
-# common v30
-$(call inherit-product, device/lge/sdm845-common/sdm845.mk)
+DEVICE_PATH := device/lge/judypn
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-lineage
 
 # Properties
 -include $(DEVICE_PATH)/system_prop.mk
@@ -60,4 +64,5 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
     $(DEVICE_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
-
+# common v30
+$(call inherit-product, device/lge/sdm845-common/sdm845.mk)
