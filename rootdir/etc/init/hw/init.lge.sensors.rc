@@ -1,0 +1,45 @@
+# Sensor
+on post-fs-data
+    mkdir /mnt/vendor/sns/sensors/ 0755 system system
+    mkdir /mnt/vendor/sns/sensors/registry/ 0755 system system
+    mkdir /mnt/vendor/sns/sensors/registry/registry/ 0755 system system
+
+    chown system system /sys/devices/virtual/input/lge_sar_rf/regreset
+    chown system system /sys/devices/virtual/input/lge_sar_rf/onoff
+    chown system system /sys/devices/virtual/input/lge_sar_rf/checkallnear
+    chown system system /sys/devices/virtual/input/lge_sar_rf/docalibration
+    chown system system /sys/devices/virtual/input/lge_sar_rf/cntinputpins
+    chown system system /sys/devices/virtual/input/lge_sar_rf/regproxdata
+    chown system system /sys/devices/virtual/input/lge_sar_rf/proxstatus
+    chown system system /sys/devices/virtual/input/lge_sar_rf/check_far
+    chown system system /sys/devices/virtual/input/lge_sar_rf/check_mid
+
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf/regreset
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf/onoff
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf/checkallnear
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf/docalibration
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf/cntinputpins
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf/regproxdata
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf/proxstatus
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf/check_far
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf/check_mid
+
+    chown system system /sys/devices/virtual/input/lge_sar_rf2/regreset
+    chown system system /sys/devices/virtual/input/lge_sar_rf2/onoff
+    chown system system /sys/devices/virtual/input/lge_sar_rf2/checkallnear
+    chown system system /sys/devices/virtual/input/lge_sar_rf2/docalibration
+    chown system system /sys/devices/virtual/input/lge_sar_rf2/cntinputpins
+    chown system system /sys/devices/virtual/input/lge_sar_rf2/regproxdata
+    chown system system /sys/devices/virtual/input/lge_sar_rf2/proxstatus
+    chown system system /sys/devices/virtual/input/lge_sar_rf2/check_far
+    chown system system /sys/devices/virtual/input/lge_sar_rf2/check_mid
+
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf2/regreset
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf2/onoff
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf2/checkallnear
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf2/docalibration
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf2/cntinputpins
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf2/regproxdata
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf2/proxstatus
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf2/check_far
+    chmod 664 /sys/devices/virtual/input/lge_sar_rf2/check_mid

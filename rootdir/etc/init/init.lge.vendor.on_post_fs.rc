@@ -1,0 +1,19 @@
+on post-fs
+    mkdir /vendor/persist-lg/property 0771 system radio
+    mkdir /vendor/persist-lg/autosimlock 0770 system system
+    mkdir /vendor/persist-lg/poweron 0775 root root
+    mkdir /vendor/persist-lg/tmo 0771 radio radio
+    #For U+ call-frw
+    mkdir /mnt/vendor/persist-lg/callfw 0770 radio radio
+    #For LGKM default key storage
+    mkdir /mnt/vendor/persist-lg/kmstore 0770 system system
+    mkdir /vendor/persist-lg/keymaster 0770 system system
+
+    #USE_SECUREBOOT
+    verity_update_state
+
+    #QFUSE
+    write /sys/devices/platform/lge-qfprom/sec_read 0
+
+    #Create roaming dir for Sprint roaming setting
+    mkdir /mnt/vendor/persist-lg/roaming 0771 system radio

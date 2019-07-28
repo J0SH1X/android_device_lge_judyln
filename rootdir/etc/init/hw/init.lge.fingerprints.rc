@@ -1,0 +1,5 @@
+on early-fs
+    chmod 666 /dev/goodix_fp
+
+on post-fs-data
+    mkdir /mnt/vendor/persist-lg/goodix 0700 system system

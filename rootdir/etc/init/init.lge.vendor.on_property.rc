@@ -1,0 +1,32 @@
+#######################################################
+# LGP_DATA_TCPIP_TCP_SYN_RETRY_CONFIG_UPLUS
+#######################################################
+on property:ro.vendor.lge.build.target_operator=LGU
+    write /proc/sys/net/ipv4/tcp_syn_retries 4
+    write /proc/sys/net/mptcp/mptcp_syn_retries 1
+
+on property:ro.vendor.lge.build.target_operator=KT
+   write /proc/sys/net/ipv4/tcp_congestion_control cubic
+
+#######################################################
+# LGP_DATA_TCPIP_MPTCP_GLOBAL_SET
+#######################################################
+on property:ro.vendor.lge.build.target_country=ESA
+   write /proc/sys/net/ipv4/tcp_congestion_control cubic
+
+#######################################################
+# LGE_CHANGE_S, [display] feature : SP MIRRORING
+#######################################################
+on property:vendor.lge.wfd.spmirroring.backlight=0
+    write /sys/class/graphics/fb0/sp_link_backlight_off 0
+    write /sys/devices/virtual/input/lge_touch/sp_link_touch_off 0
+
+on property:vendor.lge.wfd.spmirroring.backlight=1
+    write /sys/class/graphics/fb0/sp_link_backlight_off 1
+    write /sys/devices/virtual/input/lge_touch/sp_link_touch_off 1
+
+########################################
+# KERNEL sreadahead
+########################################
+on property:sys.boot_completed=1
+    setprop vendor.lge.boot_completed 1

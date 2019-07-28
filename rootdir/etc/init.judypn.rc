@@ -1,0 +1,100 @@
+# This file will be installed as vendor/etc/init/hw/init.{ro.hardware}.rc
+
+# Chipset vendor
+import /vendor/etc/init/hw/init.qcom.rc
+
+# to override init.qcom.rc and init.target.rc
+import /vendor/etc/init/hw/init.lge.usb.rc
+import /vendor/etc/init/hw/init.lge.usb.configfs.rc
+import /vendor/etc/init/hw/init.lge.power.rc
+import /vendor/etc/init/hw/init.lge.sensors.rc
+
+# import zram configurations
+import /init.lge.svelte.rc
+
+# import chipset common rc file
+import /vendor/etc/init/hw/init.sdm845.rc
+
+# import $(TARGET_PRODUCT) vendor rc file
+import /vendor/etc/init/hw/init.${ro.hardware}_core.rc
+
+# device level configurations
+on boot
+    # MME diver
+    chown system system  /sys/class/lge_mme_bus/mme_bus_ctrl/boost
+    chmod 664  /sys/class/lge_mme_bus/mme_bus_ctrl/boost
+    chown system system  /sys/class/lge_mme/mme_ctrl/mme_command
+    chmod 664  /sys/class/lge_mme/mme_ctrl/mme_command
+    chown system system  /sys/class/lge_mme/mme_ctrl/hw_test_value
+    chmod 664  /sys/class/lge_mme/mme_ctrl/hw_test_value
+    # END MME diver
+
+    # Begin Display General Features
+    chown system system /sys/class/panel/freeze_state_hal
+    chmod 664 /sys/class/panel/freeze_state_hal
+    # End Display General Features
+
+    # Begin Display Brigntness Features
+    chown system system /sys/class/backlight/panel0-backlight/brightness
+    chmod 664 /sys/class/backlight/panel0-backlight/brightness
+    chown system system /sys/class/backlight/panel0-backlight/max_brightness
+    chmod 664 /sys/class/backlight/panel0-backlight/max_brightness
+    chown system system /sys/class/backlight/panel0-backlight-ex/brightness
+    chmod 664 /sys/class/backlight/panel0-backlight-ex/brightness
+    chown system system /sys/class/backlight/panel0-backlight-ex/max_brightness
+    chmod 664 /sys/class/backlight/panel0-backlight-ex/max_brightness
+    chown system system /sys/class/panel/brightness/hl_mode
+    chmod 664 /sys/class/panel/brightness/hl_mode
+    # End Display Brigntness Features
+
+    # Begin Display Aod Features
+    chown system system /sys/class/panel/aod/area
+    chmod 664 /sys/class/panel/aod/area
+    # End Display Aod Features
+
+    # Begin Img Tune Features
+    chown system system /sys/class/panel/img_tune/hdr_mode
+    chmod 664 /sys/class/panel/img_tune/hdr_mode
+    chown system system /sys/class/panel/img_tune/image_enhance_set
+    chmod 664 /sys/class/panel/img_tune/image_enhance_set
+    chown system system /sys/class/panel/img_tune/mplus_mode
+    chmod 664 /sys/class/panel/img_tune/mplus_mode
+    chown system system /sys/class/panel/img_tune/mplus_hd
+    chmod 664 /sys/class/panel/img_tune/mplus_hd
+    chown system system /sys/class/panel/img_tune/mplus_max
+    chmod 664 /sys/class/panel/img_tune/mplus_max
+    chown system system /sys/class/panel/img_tune/screen_tune
+    chmod 664 /sys/class/panel/img_tune/screen_tune
+    chown system system /sys/class/panel/img_tune/sharpness
+    chmod 664 /sys/class/panel/img_tune/sharpness
+    chown system system /sys/class/panel/img_tune/vr_low_persist
+    chmod 664 /sys/class/panel/img_tune/vr_low_persist
+    chown system system /sys/class/panel/img_tune/rgb_tune
+    chmod 664 /sys/class/panel/img_tune/rgb_tune
+    chown system system /sys/class/panel/img_tune/screen_mode
+    chmod 664 /sys/class/panel/img_tune/screen_mode
+    # End Img Tune Features
+
+    # Accessory Features
+    chown system system /sys/class/smartcover/smartcover/state
+    chown system system /sys/class/smartcover/nfccover/state
+    # End Accessory Features
+
+    # Begin Display Factory Features
+    chown system system /sys/class/panel/factory/mfts_auto_touch_test_mode
+    chmod 664 /sys/class/panel/factory/mfts_auto_touch_test_mode
+    # End Display Factory Features
+
+    # End Display Driver
+
+    # BootProperty Features
+    chown system system /mnt/vendor/persist-lg/property/persist.sys.lg.sound_enable
+    chown system system /mnt/vendor/persist-lg/property/persist.sys.lg.fota_silent
+    # End BootProperty Features
+
+#on post-fs
+# Support tuxera exfat filesystem
+#    insmod /vendor/lib/modules/texfat.ko
+
+on early-fs
+    ffu_update

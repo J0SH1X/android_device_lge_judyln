@@ -1,0 +1,29 @@
+# chargerlogo
+on chargerlogo
+    trigger early-fs
+    trigger fs
+    trigger post-fs
+    trigger late-fs
+    trigger post-fs-data
+    trigger chargerlogo_exec
+
+on chargerlogo_exec
+    chown system system /mnt/vendor/persist-lg/chargerlogo/noautoboot
+    chmod 0666 /mnt/vendor/persist-lg/chargerlogo/noautoboot
+    chown system system /mnt/vendor/persist-lg/chargerlogo/batt_reboot_hist
+    chmod 0666 /mnt/vendor/persist-lg/chargerlogo/batt_reboot_hist
+    write /mnt/vendor/persist-lg/chargerlogo/autoboot_nosound 0
+    chmod 0666 /mnt/vendor/persist-lg/chargerlogo/autoboot_nosound
+    exec u:r:chargerlogo:s0 -- /vendor/bin/chargerlogo
+    trigger chargerlogo_after
+
+# WA chargerlogo kill
+on chargerlogo_after
+    exec u:r:chargerlogo:s0 -- /vendor/bin/chargerlogo
+    trigger chargerlogo_after
+
+service vendor.lge-chargerlogo-sh /vendor/bin/vendor.lge.power.chglogo.sh
+    class core
+    user root
+    oneshot
+    disabled

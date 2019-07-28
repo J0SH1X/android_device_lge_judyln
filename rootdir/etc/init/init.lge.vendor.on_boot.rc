@@ -1,0 +1,100 @@
+on boot
+    # Assign TCP buffer thresholds to be ceiling value of technology maximums
+    # Increased technology maximums should be reflected here.
+    # LGP_DATA
+    write /proc/sys/net/core/rmem_max  8388608
+    write /proc/sys/net/core/wmem_max  8388608
+
+    # LGP_DATA_PERFORMANCE_HELPING_CODE, y01.jeong@lge.com
+    write /proc/sys/net/core/netdev_max_backlog 5000
+
+#/* 2013-06-24, juhyup.kim@lge.com LGP_DATA_APN_BACKUP [START] */
+    mkdir /mnt/vendor/persist-lg/lgdata 0775 radio radio
+#/* 2013-06-24, juhyup.kim@lge.com LGP_DATA_APN_BACKUP [END] */
+#/* 2016-03-02 protocol-iwlan@lge.com LGP_DATA_IWLAN [START] */
+    mkdir /data/misc/setkey 0666 root system
+    restorecon /data/misc/setkey
+#/* 2016-03-02 protocol-iwlan@lge.com LGP_DATA_IWLAN [END] */
+
+# START touch_driver
+	chown system system /sys/devices/virtual/input/lge_touch/incoming_call
+	chmod 664 /sys/devices/virtual/input/lge_touch/incoming_call
+	chown system system /sys/devices/virtual/input/lge_touch/ime_status
+	chmod 664 /sys/devices/virtual/input/lge_touch/ime_status
+	chown system system /sys/devices/virtual/input/lge_touch/pen_support
+	chmod 664 /sys/devices/virtual/input/lge_touch/pen_support
+	chown system system /sys/devices/virtual/input/lge_touch/glove_support
+	chmod 664 /sys/devices/virtual/input/lge_touch/glove_support
+	chown system system /sys/devices/virtual/input/lge_touch/keyguard
+	chmod 664 /sys/devices/virtual/input/lge_touch/keyguard
+	chown system system /sys/devices/virtual/input/lge_touch/debug_tool
+	chmod 664 /sys/devices/virtual/input/lge_touch/debug_tool
+	chown system system /sys/devices/virtual/input/lge_touch/debug_option
+	chmod 664 /sys/devices/virtual/input/lge_touch/debug_option
+	chown system system /sys/devices/virtual/input/lge_touch/vr_status
+	chmod 664 /sys/devices/virtual/input/lge_touch/vr_status
+	chown system system /sys/devices/virtual/input/lge_touch/autotune
+	chmod 664 /sys/devices/virtual/input/lge_touch/autotune
+	chown system system /sys/devices/virtual/input/lge_touch/grip_suppression
+	chmod 664 /sys/devices/virtual/input/lge_touch/grip_suppression
+	chown system system /sys/devices/virtual/input/lge_touch/app_data
+	chmod 664 /sys/devices/virtual/input/lge_touch/app_data
+	chown system system /sys/devices/virtual/input/lge_touch/film_status
+	chmod 664 /sys/devices/virtual/input/lge_touch/film_status
+# END touch_driver
+
+# START touch_knock_on
+	chown system system /sys/devices/virtual/input/lge_touch/lpwg_data
+	chmod 664 /sys/devices/virtual/input/lge_touch/lpwg_data
+	chown system system /sys/devices/virtual/input/lge_touch/lpwg_notify
+	chmod 664 /sys/devices/virtual/input/lge_touch/lpwg_notify
+	chown system system /sys/devices/virtual/input/lge_touch/q_sensitivity
+	chmod 664 /sys/devices/virtual/input/lge_touch/q_sensitivity
+	chown system system /sys/devices/virtual/input/lge_touch/swipe_enable
+	chmod 664 /sys/devices/virtual/input/lge_touch/swipe_enable
+	chown system system /sys/devices/virtual/input/lge_touch/swipe_tool
+	chmod 664 /sys/devices/virtual/input/lge_touch/swipe_tool
+	chown system system /sys/devices/virtual/input/lge_touch/lpwg_abs
+	chmod 664 /sys/devices/virtual/input/lge_touch/lpwg_abs
+	chown system system /sys/devices/virtual/input/lge_touch/voice_button
+	chmod 664 /sys/devices/virtual/input/lge_touch/voice_button
+	chown system system /sys/devices/virtual/input/lge_touch/ai_pick
+	chmod 664 /sys/devices/virtual/input/lge_touch/ai_pick
+# END touch_knock_on
+
+# Start secure_touch
+	chown system system /sys/devices/virtual/input/lge_touch/secure_touch
+	chmod 664 /sys/devices/virtual/input/lge_touch/secure_touch
+	chown system system /sys/devices/virtual/input/lge_touch/secure_touch_enable
+	chmod 664 /sys/devices/virtual/input/lge_touch/secure_touch_enable
+	chown system system /sys/devices/virtual/input/lge_touch/secure_touch_devinfo
+	chmod 664 /sys/devices/virtual/input/lge_touch/secure_touch_devinfo
+# End secure_touch
+
+# CoverDisplay
+	chown system system /sys/devices/platform/soc/a80000.spi/spi_master/spi1/spi1.2/fw
+	chmod 664 /sys/devices/platform/soc/a80000.spi/spi_master/spi1/spi1.2/fw
+	chown system system /sys/devices/platform/soc/soc:gpio_keys/virtual_mcu_firmware_write
+	chmod 664 /sys/devices/platform/soc/soc:gpio_keys/virtual_mcu_firmware_write
+	chown system system /sys/devices/virtual/ice40_i2c/coverdisplay/FILE_ICE40_POLL
+	chmod 664 /sys/devices/virtual/ice40_i2c/coverdisplay/FILE_ICE40_POLL
+	chown system system /sys/devices/platform/soc/soc:gpio_keys/cover_fw_update
+	chmod 666 /sys/devices/platform/soc/soc:gpio_keys/cover_fw_update
+# CoverDisplay
+
+# START LED_driver
+	chown system system /sys/class/cover_led/rgb_led/led_pattern
+	chmod 664 /sys/class/cover_led/rgb_led/led_pattern
+	chown system system /sys/class/cover_led/rgb_led/led_blink
+	chmod 664 /sys/class/cover_led/rgb_led/led_blink
+	chown system system /sys/class/cover_led/rgb_led/pattern_onoff
+	chmod 664 /sys/class/cover_led/rgb_led/pattern_onoff
+	chown system system /sys/class/cover_led/rgb_led/led_init
+	chmod 664 /sys/class/cover_led/rgb_led/led_init
+	chown system system /sys/class/leds/CR/brightness
+	chmod 664 /sys/class/leds/CR/brightness
+	chown system system /sys/class/leds/CG/brightness
+	chmod 664 /sys/class/leds/CG/brightness
+	chown system system /sys/class/leds/CB/brightness
+	chmod 664 /sys/class/leds/CB/brightness
+# END LED_driver
