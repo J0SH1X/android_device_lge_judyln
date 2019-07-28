@@ -231,6 +231,46 @@ vendor/bin/hw/vendor.lge.hardware.configstore@1.0-service
 vendor/etc/init/vendor.lge.hardware.configstore@1.0-service.rc
 vendor/lib64/vendor.lge.hardware.configstore@1.0.so
 
+# Crypto
+vendor/lib/libGPQTEEC_vendor.so
+vendor/lib/libatd_common.so
+vendor/lib/libfpfactory-impl.so
+vendor/lib/libhdcp1prov.so
+vendor/lib/libhdcp2p2prov.so
+vendor/lib/libhdcpsrm.so
+vendor/lib/liblgefido_hal_impl.so
+vendor/lib/libmdsprpc.so
+vendor/lib/liboemcrypto.so
+vendor/lib/libpvr.so
+vendor/lib/librmp.so
+vendor/lib/libsi.so
+vendor/lib/libwvoemprov.so
+vendor/lib/libatd_corelib.so
+vendor/lib/libatd_modeminterface.so
+vendor/lib/libcpion.so
+vendor/lib64/libGPQTEEC_vendor.so
+vendor/lib64/libcppf.so
+vendor/lib64/libfpfactory-impl.so
+vendor/lib64/libhdcp1prov.so
+vendor/lib64/libhdcp2p2prov.so
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/liblgefido_hal_impl.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libpvr.so
+vendor/lib64/librmp.so
+vendor/lib64/libsi.so
+vendor/lib64/libcpion.so
+vendor/lib64/liblgftmitem.so
+vendor/lib/liblgftmitem.so
+vendor/lib/libbluedroid_bdt.so
+vendor/lib/libunified_sysfs_pm.so
+vendor/lib/liblgehdcpek.so
+vendor/bin/hw/vendor.lge.hardware.lgatcmd@1.0-service
+vendor/etc/init/vendor.lge.hardware.lgatcmd@1.0-service.rc
+vendor/lib/hw/vendor.lge.hardware.lgatcmd@1.0-impl.so
+vendor/lib/vendor.lge.hardware.lgatcmd@1.0.so
+
 # DRM
 vendor/bin/qseecomd
 vendor/bin/seemp_healthd
