@@ -19,8 +19,6 @@ DEVICE_PATH := device/lge/judypn
 # inherit from common v30
 -include device/lge/sdm845-common/BoardConfigCommon.mk
 
-# TARGET_OTA_ASSERT_DEVICE := v40,judypn,v405ebw,V40
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
@@ -49,9 +47,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judypn
-
-# Sepolicy
-BOARD_SEPOLICY_VERS := 27.0
 
 # Treble
 BOARD_VNDK_VERSION := current
