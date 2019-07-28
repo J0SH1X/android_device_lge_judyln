@@ -231,6 +231,35 @@ vendor/bin/hw/vendor.lge.hardware.configstore@1.0-service
 vendor/etc/init/vendor.lge.hardware.configstore@1.0-service.rc
 vendor/lib64/vendor.lge.hardware.configstore@1.0.so
 
+# DRM
+vendor/bin/qseecomd
+vendor/bin/seemp_healthd
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libqisl.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/librpmb.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libspl.so
+vendor/lib64/libssd.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libtzdrmgenprov.so
+vendor/lib/libcppf.so
+vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so
+vendor/lib/libGPreqcancel.so
+vendor/lib/libGPreqcancel_svc.so
+vendor/lib/libqisl.so
+vendor/lib/libQSEEComAPI.so
+vendor/lib/librpmb.so
+vendor/lib/libspl.so
+vendor/lib/libssd.so
+vendor/lib/libStDrvInt.so
+vendor/lib/libtzdrmgenprov.so
+
 # Firmware (Audio)
 vendor/firmware/Tfa9872.cnt
 vendor/firmware/Tfa9872_ras.cnt
