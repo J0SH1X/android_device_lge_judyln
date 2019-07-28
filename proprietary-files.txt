@@ -398,3 +398,8 @@ vendor/lib/camera/fw/bu24235_dl_program_JUDY_JOAN_LGITAct_ICG1020S_rev0_S_data2.
 vendor/lib/camera/fw/bu24235_dl_program_Judy_LGITAct_ICG1020S_rev0_S_data1.bin
 vendor/lib/camera/fw/bu24235_dl_program_Judy_LGITAct_ICG1020S_rev0_S_data2.bin
 
+# Firmware (FFU)
+vendor/ffu/FFUSAMSUNG_KLUDG4U1EA-B0C1_0500.bin
+vendor/ffu/FFUTOSHIBA_THGAF8G9T43BAIRB_0300.bin
+
+
