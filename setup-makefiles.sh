@@ -1,5 +1,6 @@
 #!/bin/bash
 #
+# Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,8 +18,34 @@
 
 set -e
 
-export DEVICE=judypn
-export DEVICE_COMMON=sdm845-common
-export VENDOR=lge
+DEVICE=judypn
+VENDOR=lge
 
-./../$DEVICE_COMMON/setup-makefiles.sh $@
+INITIAL_COPYRIGHT_YEAR=2019
+
+# Load extract_utils and do some sanity checks
+MY_DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+
+LINEAGE_ROOT="$MY_DIR"/../../..
+
+HELPER="$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_utils.sh
+if [ ! -f "$HELPER" ]; then
+    echo "Unable to find helper script at $HELPER"
+    exit 1
+fi
+. "$HELPER"
+
+# Initialize the helper
+setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
+
+# Copyright headers and guards
+write_headers
+
+write_makefiles "$MY_DIR"/proprietary-files.txt true
+
+cat << EOF >> "$ANDROIDMK"
+EOF
+
+# Finish
+write_footers
