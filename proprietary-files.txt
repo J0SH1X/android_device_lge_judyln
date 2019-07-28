@@ -343,6 +343,10 @@ vendor/usr/keylayout/goodix_fp_key.kl
 vendor/firmware/Tfa9872.cnt
 vendor/firmware/Tfa9872_ras.cnt
 
+# Firmware (Bluetooth)
+vendor/firmware/crbtfw21.tlv
+vendor/firmware/crnv21.bin
+
 # Firmware (Camera)
 vendor/firmware/CAMERA_ICP.elf
 
