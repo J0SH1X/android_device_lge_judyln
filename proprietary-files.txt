@@ -1,0 +1,14 @@
+# Audio
+vendor/etc/acdbdata/General_cal.acdb
+vendor/etc/acdbdata/Global_cal.acdb
+vendor/etc/acdbdata/Bluetooth_cal.acdb
+vendor/etc/acdbdata/Headset_cal.acdb
+vendor/etc/acdbdata/Hdmi_cal.acdb
+vendor/etc/acdbdata/Codec_cal.acdb
+vendor/etc/acdbdata/Speaker_cal.acdb
+vendor/etc/acdbdata/Handset_cal.acdb
+
+# Firmware (Audio)
+vendor/firmware/Tfa9872.cnt
+vendor/firmware/Tfa9872_ras.cnt
+
