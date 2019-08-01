@@ -48,8 +48,5 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judypn
 
-# Treble
-BOARD_VNDK_VERSION := current
-
 # inherit from the proprietary version
 -include vendor/lge/judypn/BoardConfigVendor.mk
