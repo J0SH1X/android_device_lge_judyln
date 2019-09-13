@@ -6,6 +6,25 @@ on fs
 
     mount_all /vendor/etc/fstab.${ro.hardware}
 
+    mkdir /persist/data 0700 system system
+    mkdir /persist/display 0770 system graphics
+    mkdir /persist/rfs 0770 root system
+    mkdir /persist/hlos_rfs 0770 root system
+    chmod 0770 /persist/rfs
+    chmod 0770 /persist/rfs/shared
+    chmod 0770 /persist/rfs/msm
+    chmod 0770 /persist/rfs/msm/adsp
+    chmod 0770 /persist/rfs/msm/mpss
+    chmod 0770 /persist/rfs/msm/slpi
+    chmod 0770 /persist/rfs/mdm
+    chmod 0770 /persist/rfs/mdm/adsp
+    chmod 0770 /persist/rfs/mdm/mpss
+    chmod 0770 /persist/rfs/mdm/slpi
+    chmod 0770 /persist/rfs/mdm/tn
+    chmod 0770 /persist/rfs/apq
+    chmod 0770 /persist/rfs/apq/gnss
+    chmod 0770 /persist/hlos_rfs
+
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
