@@ -99,7 +99,7 @@ on post-fs-data
 
     #Create callduration file
     mkdir /mnt/vendor/persist-lg/callduration 0770 system radio
-    chown system radio system /mnt/vendor/persist-lg/callduration
+    chown system radio /mnt/vendor/persist-lg/callduration
     chmod 0770 /mnt/vendor/persist-lg/callduration
 
     #Create rtnlastdate file
