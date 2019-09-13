@@ -101,5 +101,3 @@ on post-fs
 # Support tuxera exfat filesystem
     insmod /vendor/lib/modules/texfat.ko
 
-on early-fs
-    ffu_update
