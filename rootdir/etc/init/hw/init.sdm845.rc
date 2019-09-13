@@ -169,4 +169,4 @@ on property:persist.vendor.lge.service.crash.enable=0
     write /sys/kernel/debug/tracing/buffer_size_kb 0
 
     # free buffer
-    write /sys/kernel/debug/tracing/free_buffer
+    #write /sys/kernel/debug/tracing/free_buffer
