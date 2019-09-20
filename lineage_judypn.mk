@@ -56,3 +56,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT="lge/judypn_lao_eea/judypn:9/PKQ1.190202.001/191441032161a:user/release-keys"
 
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
+    ro.product.model \
+    ro.vendor.product.model \
+    ro.product.system.model \
+    ro.product.name \
+    ro.product.vendor.name
