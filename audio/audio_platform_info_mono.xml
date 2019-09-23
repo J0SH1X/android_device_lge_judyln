@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Copyright (c) 2014, 2016-2017, The Linux Foundation. All rights reserved. -->
+<!--                                                                        -->
+<!-- Redistribution and use in source and binary forms, with or without     -->
+<!-- modification, are permitted provided that the following conditions are -->
+<!-- met:                                                                   -->
+<!--     * Redistributions of source code must retain the above copyright   -->
+<!--       notice, this list of conditions and the following disclaimer.    -->
+<!--     * Redistributions in binary form must reproduce the above          -->
+<!--       copyright notice, this list of conditions and the following      -->
+<!--       disclaimer in the documentation and/or other materials provided  -->
+<!--       with the distribution.                                           -->
+<!--     * Neither the name of The Linux Foundation nor the names of its    -->
+<!--       contributors may be used to endorse or promote products derived  -->
+<!--       from this software without specific prior written permission.    -->
+<!--                                                                        -->
+<!-- THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED           -->
+<!-- WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF   -->
+<!-- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT -->
+<!-- ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS -->
+<!-- BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR -->
+<!-- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF   -->
+<!-- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR        -->
+<!-- BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,  -->
+<!-- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN -->
+<!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                          -->
+<audio_platform_info>
+    <acdb_ids>
+        <device name="SND_DEVICE_OUT_SPEAKER" acdb_id="14"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" acdb_id="124"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_QMIC_FLUENCE" acdb_id="131"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_TMIC" acdb_id="131"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_DMIC_FLUENCE" acdb_id="132"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_PROTECTED" acdb_id="150"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_PROTECTED_VBAT" acdb_id="150"/>
+        <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK_MONO_1" acdb_id="151"/>
+        <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK_MONO_2" acdb_id="152"/>
+        <device name="SND_DEVICE_LGE_IN_QVOICE_VR_TX" acdb_id="34"/>
+        <device name="SND_DEVICE_OUT_AFE_PROXY" acdb_id="18"/>
+    </acdb_ids>
+    <bit_width_configs>
+        <device name="SND_DEVICE_OUT_SPEAKER" bit_width="24"/>
+    </bit_width_configs>
+    <pcm_ids>
+        <usecase name="USECASE_AUDIO_PLAYBACK_LOW_LATENCY" type="out" id="13"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_OFFLOAD" type="out" id="8"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_OFFLOAD2" type="out" id="15"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_OFFLOAD3" type="out" id="16"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_OFFLOAD4" type="out" id="28"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_OFFLOAD5" type="out" id="29"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_OFFLOAD6" type="out" id="30"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_OFFLOAD7" type="out" id="31"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_OFFLOAD8" type="out" id="32"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_OFFLOAD9" type="out" id="33"/>
+        <usecase name="USECASE_VOICEMMODE1_CALL" type="in" id="2"/>
+        <usecase name="USECASE_VOICEMMODE1_CALL" type="out" id="2"/>
+        <usecase name="USECASE_VOICEMMODE2_CALL" type="in" id="19"/>
+        <usecase name="USECASE_VOICEMMODE2_CALL" type="out" id="19"/>
+        <usecase name="USECASE_VOWLAN_CALL" type="in" id="-1"/>
+        <usecase name="USECASE_VOWLAN_CALL" type="out" id="-1"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_FM" type="out" id="5"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_FM" type="in" id="34"/>
+        <usecase name="USECASE_AUDIO_SPKR_CALIB_RX" type="out" id="5"/>
+        <usecase name="USECASE_AUDIO_SPKR_CALIB_TX" type="in" id="35"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_AFE_PROXY" type="out" id="6"/>
+        <usecase name="USECASE_AUDIO_RECORD_AFE_PROXY" type="in" id="7"/>
+        <usecase name="USECASE_AUDIO_RECORD_LOW_LATENCY" type="in" id="17" />
+        <usecase name="USECASE_AUDIO_PLAYBACK_ULL" type="out" id="17" />
+        <usecase name="USECASE_AUDIO_PLAYBACK_EXT_DISP_SILENCE" type="out" id="27" />
+        <usecase name="USECASE_AUDIO_PLAYBACK_VOIP" type="out" id="16" />
+        <usecase name="USECASE_AUDIO_RECORD_VOIP" type="in" id="16" />
+        <usecase name="USECASE_AUDIO_PLAYBACK_MMAP" type="out" id="33" />
+        <usecase name="USECASE_AUDIO_RECORD_MMAP" type="in" id="33" />
+	<usecase name="USECASE_AUDIO_3RDP_SPKR_PROT_TX" type="in" id="87"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_DUAL_AUDIO" type="in" id="88"/>
+        <usecase name="USECASE_AUDIO_PLAYBACK_DUAL_AUDIO" type="out" id="88"/>
+    </pcm_ids>
+    <config_params>
+        <param key="spkr_1_tz_name" value="wsatz.13"/>
+        <param key="spkr_2_tz_name" value="wsatz.14"/>
+        <!-- In the below value string, the value indicates default mono -->
+        <!-- speaker. It can be set to either left or right              -->
+        <param key="mono_speaker" value="right"/>
+        <!-- In the below value string, first parameter indicates size -->
+        <!-- followed by perf lock options                             -->
+        <param key="perf_lock_opts" value="4, 0x40400000, 0x1, 0x40C00000, 0x1"/>
+        <param key="native_audio_mode" value="src"/>
+        <param key="input_mic_max_count" value="4"/>
+        <param key="true_32_bit" value="true"/>
+        <!-- In the below value string, the value indicates sidetone gain in dB -->
+        <param key="usb_sidetone_gain" value="35"/>
+    </config_params>
+    <gain_db_to_level_mapping>
+        <gain_level_map db="-59" level="5"/>
+        <gain_level_map db="-17.4" level="4"/>
+        <gain_level_map db="-13.8" level="3"/>
+        <gain_level_map db="-10.2" level="2"/>
+        <gain_level_map db="0" level="1"/>
+    </gain_db_to_level_mapping>
+    <backend_names>
+        <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOICE_SPEAKER_EXTRA_VOLUME" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOICE_SPEAKER_VC_EXTRA_VOLUME" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOIP_SPEAKER" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_LOOPBACK_SPEAKER" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_MT_LOOPBACK_SPEAKER" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOICE_SPEAKER_VC" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX-and-TERTIARY_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_SPEAKER_AND_HEADPHONES_ADVANCED" backend="speaker-and-headphones" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX-and-TERTIARY_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_SPEAKER_AND_HEADPHONES_AUX" backend="speaker-and-headphones" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX-and-TERTIARY_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_SPEAKER_AND_HEADPHONES_DAC" backend="speaker-and-headphones-dac" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX-and-TERTIARY_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_SPEAKER_AND_HEADPHONES_DAC_ADVANCED" backend="speaker-and-headphones-dac" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX-and-TERTIARY_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_SPEAKER_AND_HEADPHONES_DAC_AUX" backend="speaker-and-headphones-dac" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX-and-TERTIARY_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" backend="speaker-and-usb-headphones" interface="QUAT_MI2S_RX-and-USB_AUDIO_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_A2DP" backend="speaker-and-bt-a2dp" interface="QUAT_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_BT_SCO_WB" backend="bt-sco-wb" interface="SLIMBUS_7_RX"/>
+	<device name="SND_DEVICE_LGE_OUT_BT_SCO_WB_RING" backend="bt-sco-wb" interface="SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_BT_SCO" backend="bt-sco" interface="SLIMBUS_7_RX"/>
+	<device name="SND_DEVICE_LGE_OUT_BT_SCO_RING" backend="bt-sco" interface="SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_BT_A2DP" backend="bt-a2dp" interface="SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_LINE" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_ANC_HEADSET" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_ANC_FB_HEADSET" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_LINE" backend="speaker-and-headphones" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_ANC_HEADSET" backend="speaker-and-headphones" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_ANC_FB_HEADSET" backend="speaker-and-headphones" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_ANC_HEADSET" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_ANC_FB_HEADSET" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_LINE" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOIP_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX" />
+        <device name="SND_DEVICE_LGE_OUT_VOIP_HEADPHONES_ADVANCED" backend="headphones" interface="SLIMBUS_6_RX" />
+        <device name="SND_DEVICE_LGE_OUT_VOIP_HEADPHONES_AUX" backend="headphones" interface="SLIMBUS_6_RX" />
+        <device name="SND_DEVICE_LGE_OUT_LOOPBACK_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX" />
+        <device name="SND_DEVICE_OUT_VOICE_LINE" backend="headphones" interface="SLIMBUS_6_RX" />
+        <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX" />
+        <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX" />
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_ADVANCED_44_1" backend="headphones-44.1" interface="SLIMBUS_5_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_AUX_44_1" backend="headphones-44.1" interface="SLIMBUS_5_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_ADVANCED" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_AUX" backend="headphones" interface="SLIMBUS_6_RX" />
+        <device name="SND_DEVICE_LGE_OUT_VOICE_HEADPHONES_ADVANCED" backend="headphones" interface="SLIMBUS_6_RX" />
+        <device name="SND_DEVICE_LGE_OUT_VOICE_HEADPHONES_AUX" backend="headphones" interface="SLIMBUS_6_RX" />
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONE_24BIT" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONE_24BIT_ADVANCED" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONE_24BIT_AUX" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_HIFI_DAC" backend="TERT_MI2S_RX" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_HIFI_DAC_ADVANCED" backend="TERT_MI2S_RX" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_HIFI_DAC_AUX" backend="TERT_MI2S_RX" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_HIFI_DAC_44_1" backend="TERT_MI2S_RX" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_HIFI_DAC_44_1_ADVANCED" backend="TERT_MI2S_RX" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_HIFI_DAC_44_1_AUX" backend="TERT_MI2S_RX" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_HIFI_DACDOP" backend="TERT_TDM_RX_0" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_HIFI_DACDOP_ADVANCED" backend="TERT_TDM_RX_0" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_LGE_OUT_HEADPHONES_HIFI_DACDOP_AUX" backend="TERT_TDM_RX_0" interface="TERT_TDM_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_HEADPHONES" backend="voice-speaker-and-voice-headphones" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_HAC_EARPIECE" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_AAT_HANDSET" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_AAT_HEADSET" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_AAT_SPEAKER" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOICE_HANDSET_VC_CLEAN" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOICE_HANDSET_VC_SOFT" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOICE_HANDSET_VC_SMOOTH" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOICE_HANDSET_VC" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOICE_HANDSET_CLEAN" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOICE_HANDSET_SOFT" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOICE_HANDSET_SMOOTH" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_LOOPBACK_HANDSET" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_LOOPBACK_HEADPHONES" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_MT_LOOPBACK_HANDSET" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_BT_SCO_AND_SPEAKER" interface="QUAT_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_BT_SCO_WB_AND_SPEAKER" interface="QUAT_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_BT_SCO_AND_HEADPHONES" interface="TERTIARY_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_BT_SCO_WB_AND_HEADPHONES" interface="TERTIARY_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_BT_SCO_AND_HEADPHONES_AND_SPEAKER" interface="QUAT_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_BT_SCO_WB_AND_HEADPHONES_AND_SPEAKER" interface="QUAT_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOIP_HANDSET" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOIP_BT_SCO" interface="SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_VOIP_BT_SCO_WB" interface="SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_LGE_OUT_LOOPBACK_BT" interface="SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_RECOGNITION" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_VOICE_RECOGNITION" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_SUBMIC_1" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_SUBMIC_2" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_QVOICE_VR_TX" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_CAMCORDER_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_CAMCORDER_PREVIEW_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_CAMCORDER_MIC_0" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_CAMCORDER_MIC_90" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_CAMCORDER_MIC_180" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_CAMCORDER_MIC_270" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_CAMCORDER_MIC_NOTMWSOUND" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_CAMCORDER" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_TA_CAMCORDER" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_CAMCORDER_NOTMWSOUND" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_CAMCORDER_AUX" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_0" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_90" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_180" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_270" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_REVERB_0" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_REVERB_90" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_REVERB_180" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_REVERB_270" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_CONCERT_0" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_CONCERT_90" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_CONCERT_180" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_CONCERT_270" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_CONCERT_REVERB_0" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_CONCERT_REVERB_90" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_CONCERT_REVERB_180" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_CONCERT_REVERB_270" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_SPEECH_0" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_SPEECH_90" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_SPEECH_180" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_SPEECH_270" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_SPEECH_REVERB_0" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_SPEECH_REVERB_90" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_SPEECH_REVERB_180" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_SPEECH_REVERB_270" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HIFI_RECORDER_MIC_INTERVIEW" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_MEMO_8K_TX" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_MEMO_TX" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_VOICE_MEMO_8K_TX" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_VOICE_MEMO_TX" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_VOICE_MEMO_TX_HIFI" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_VOICE_MEMO_TX_REVERB" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_VOICE_MEMO_TX_CONCERT" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_VOICE_MEMO_TX_CONCERT_REVERB" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_VOICE_MEMO_TX_SPEECH" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_HEADSET_VOICE_MEMO_TX_SPEECH_REVERB" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_BT_SCO_MIC_NREC_WB" interface="SLIMBUS_7_TX"/>
+        <device name="SND_DEVICE_LGE_IN_BT_SCO_MIC_NREC" interface="SLIMBUS_7_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_HEADSET_MIC_FLUENCE" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_LOOPBACK_SPEAKER_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_LOOPBACK_HEADSET_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_LOOPBACK_HANDSET_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_LOOPBACK_SUBMIC1" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_LOOPBACK_SUBMIC2" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_LOOPBACK_SUBMIC3" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_MT_LOOPBACK_HANDSET_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_MT_LOOPBACK_SPEAKER_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_MT_LOOPBACK_THIRD_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_MICTEST_HANDSET_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_MICTEST_HEADSET_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_MICTEST_SUBMIC1" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_MICTEST_SUBMIC2" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_MICTEST_SUBMIC3" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_MICTEST_MAINSUB_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_MICTEST_ALL_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_CALL_HANDSET_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_CALL_SUBMIC1" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_CALL_SUBMIC2" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_CALL_SUBMIC3" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_SMIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_SPEAKER_SMIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_SPEAKER_MIC_UWA" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOICE_SPEAKER_DMIC_UWA" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_SPEAKER_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_SPEAKER_SMIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_SPEAKER_DMIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_HEADSET_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_HANDSET_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_HANDSET_SMIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_HANDSET_DMIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_BT_SCO_MIC" interface="SLIMBUS_7_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_BT_SCO_MIC_WB" interface="SLIMBUS_7_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_BT_SCO_MIC_NREC" interface="SLIMBUS_7_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VOIP_BT_SCO_MIC_NREC_WB" interface="SLIMBUS_7_TX"/>
+        <device name="SND_DEVICE_LGE_IN_LOOPBACK_BT_MIC" interface="SLIMBUS_7_TX"/>
+        <device name="SND_DEVICE_LGE_IN_DUMMY_MIC" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_VR_TX" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_LGE_IN_FM_ANALOG" interface="SLIMBUS_8_TX"/>
+    </backend_names>
+</audio_platform_info>
+
