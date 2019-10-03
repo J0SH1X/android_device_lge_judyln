@@ -24,7 +24,7 @@ DEVICE_PATH := device/lge/judypn
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-#    $(DEVICE_PATH)/overlay-lineage
+    $(DEVICE_PATH)/overlay-lineage
 
 # Properties
 -include $(DEVICE_PATH)/system_prop.mk
