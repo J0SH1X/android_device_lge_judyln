@@ -38,8 +38,11 @@ if [ $RU == "1" ]; then
     VENDOR_PRODUCT_NAME=$(echo ${VENDOR_PRODUCT_NAME} | sed -r 's/_com/_ru/')
 fi
 
+# For EEA
 EEA=`getprop ro.boot.product.lge.eea_type`
-if [ "$EEA" != "" ]; then
+
+if [ -n "$EEA" ]; then
+    log -p i -t hw_vari "[LGE][SBP] $EEA"
     VENDOR_FINGERPRINT=$(echo ${VENDOR_FINGERPRINT} | sed -r "s/_com/_eea/")
     VENDOR_PRODUCT_NAME=$(echo ${VENDOR_PRODUCT_NAME} | sed -r "s/_com/_eea/")
 fi

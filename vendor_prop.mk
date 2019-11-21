@@ -1,5 +1,3 @@
 #
-# vendor props for judypn
+# vendor props for judyln
 #
-
-

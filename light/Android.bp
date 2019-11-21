@@ -16,9 +16,9 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.judypn",
+    name: "android.hardware.light@2.0-service.judyln",
     proprietary: true,
-    init_rc: ["android.hardware.light@2.0-service.judypn.rc"],
+    init_rc: ["android.hardware.light@2.0-service.judyln.rc"],
     srcs: ["service.cpp", "Light.cpp"],
     shared_libs: [
         "libbase",

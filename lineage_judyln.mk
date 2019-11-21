@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -26,8 +26,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit from judypn device
-$(call inherit-product, device/lge/judypn/device.mk)
+# Inherit from judyln device
+$(call inherit-product, device/lge/judyln/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -37,24 +37,24 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device identifiers
 
-PRODUCT_NAME := lineage_judypn
-PRODUCT_DEVICE := judypn
+PRODUCT_NAME := lineage_judyln
+PRODUCT_DEVICE := judyln
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_RELEASE_NAME := V40
-PRODUCT_MODEL := LM-V405
+PRODUCT_RELEASE_NAME := G7 ThinQ
+PRODUCT_MODEL := LM-G710
 
 PRODUCT_GMS_CLIENTID_BASE := android-om-lg
 
-TARGET_VENDOR_PRODUCT_NAME := judypn_lao_eea
-TARGET_VENDOR_DEVICE_NAME := judypn
+TARGET_VENDOR_PRODUCT_NAME := judyln_lao_com
+TARGET_VENDOR_DEVICE_NAME := judyln
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=judypn \
-    PRODUCT_NAME=judypn_lao_eea \
-    PRIVATE_BUILD_DESC="judypn_lao_eea-user 9 PKQ1.190202.001 191441032161a release-keys"
+    TARGET_DEVICE=judyln \
+    PRODUCT_NAME=judyln_lao_com \
+    PRIVATE_BUILD_DESC="judyln_lao_com-user 9 PKQ1.181105.001 192481510af51 release-keys"
 
-BUILD_FINGERPRINT="lge/judypn_lao_eea/judypn:9/PKQ1.190202.001/191441032161a:user/release-keys"
+BUILD_FINGERPRINT="lge/judyln_lao_com/judyln:9/PKQ1.181105.001/192481510af51:user/release-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model \

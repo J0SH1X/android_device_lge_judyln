@@ -56,9 +56,9 @@
 
          For example, a device with notification and battery lights that supports
          pulsating and RGB control would set this config to 75. -->
-    <integer name="config_deviceLightCapabilities" translatable="false">0</integer>
+    <integer name="config_deviceLightCapabilities" translatable="false">235</integer>
 
     <!-- BurnIn protection. This should be enabled on devices that have OLED displays -->
-    <bool name="config_enableBurnInProtection">true</bool>
+    <bool name="config_enableBurnInProtection">false</bool>
 
 </resources>

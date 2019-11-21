@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=judypn
+DEVICE=judyln
 VENDOR=lge
 
 # Load extract_utils and do some sanity checks
@@ -49,7 +49,7 @@ while [ "$1" != "" ]; do
 done
 
 if [ -z "$SRC" ]; then
-    SRC=/home/markus/ssd_home/V405EBW20a/system
+    SRC=/home/llamawithapc/system/
 fi
 
 # Initialize the helper

@@ -10,7 +10,7 @@ import /vendor/etc/init/hw/init.lge.power.rc
 import /vendor/etc/init/hw/init.lge.sensors.rc
 
 # import zram configurations
-import /init.lge.svelte.rc
+# import /init.lge.svelte.rc
 
 # import chipset common rc file
 import /vendor/etc/init/hw/init.sdm845.rc

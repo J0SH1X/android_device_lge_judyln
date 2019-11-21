@@ -1,5 +1,5 @@
 /*
- * Copyright 2017 The LineageOS Project
+ * Copyright (C) 2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,37 +14,61 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.judypn"
+#define LOG_TAG "android.hardware.light@2.0-service.alice"
 
 #include <hidl/HidlTransportSupport.h>
+#include <utils/Errors.h>
 
 #include "Light.h"
 
+// libhwbinder:
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
+// Generated HIDL files
 using android::hardware::light::V2_0::ILight;
 using android::hardware::light::V2_0::implementation::Light;
 
-using android::OK;
-using android::sp;
-using android::status_t;
+const static std::string kBacklightPath = "/sys/class/backlight/panel0-backlight/brightness";
+const static std::string kEmotionalBlinkPath = "/sys/class/lg_rgb_led/use_patterns/blink_patterns";
+const static std::string kEmotionalOnOffPath = "/sys/class/lg_rgb_led/use_patterns/onoff_patterns";
 
 int main() {
-    android::sp<ILight> service = new Light();
+    std::ofstream backlight(kBacklightPath);
+    if (!backlight) {
+        int error = errno;
+        ALOGE("Failed to open %s (%d): %s", kBacklightPath.c_str(), error, strerror(error));
+        return -error;
+    }
+
+    std::ofstream emotionalBlinkPattern(kEmotionalBlinkPath);
+    if (!emotionalBlinkPattern) {
+        int error = errno;
+        ALOGE("Failed to open %s (%d): %s", kEmotionalBlinkPath.c_str(), error, strerror(error));
+        return -error;
+    }
+
+    std::ofstream emotionalOnOffPattern(kEmotionalOnOffPath);
+    if (!emotionalOnOffPattern) {
+        int error = errno;
+        ALOGE("Failed to open %s (%d): %s", kEmotionalOnOffPath.c_str(), error, strerror(error));
+        return -error;
+    }
+
+    android::sp<ILight> service = new Light(std::move(backlight), std::move(emotionalBlinkPattern), std::move(emotionalOnOffPattern));
 
     configureRpcThreadpool(1, true);
 
-    status_t status = service->registerAsService();
-    if (status != OK) {
-        ALOGE("Cannot register Light HAL service.");
+    android::status_t status = service->registerAsService();
+
+    if (status != android::OK) {
+        ALOGE("Cannot register Light HAL service");
         return 1;
     }
 
-    ALOGI("Light HAL service ready.");
-
+    ALOGI("Light HAL Ready.");
     joinRpcThreadpool();
-
-    ALOGI("Light HAL service failed to join thread pool.");
+    // Under normal cases, execution will not reach this line.
+    ALOGE("Light HAL failed to join thread pool.");
     return 1;
 }

@@ -1,4 +1,3 @@
 #
-# system props for judypn
+# system props for judyln
 #
-

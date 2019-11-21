@@ -73,6 +73,15 @@ if [ "$diag_count" == "" ]; then
     setprop ro.vendor.lge.usb.diag_count 1
 fi
 
+#spr check property
+target_operator=`getprop ro.vendor.lge.build.target_operator`
+if [ "$target_operator" == "SPR" ]; then
+    setprop ro.vendor.lge.usb.spr_diag 1
+else
+    setprop ro.vendor.lge.usb.spr_diag 0
+
+fi
+
 # Set platform variables
 if [ -f /sys/devices/soc0/hw_platform ]; then
     soc_hwplatform=`cat /sys/devices/soc0/hw_platform` 2> /dev/null

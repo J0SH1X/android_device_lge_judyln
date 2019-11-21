@@ -71,30 +71,14 @@ on boot
 	chmod 664 /sys/devices/virtual/input/lge_touch/secure_touch_devinfo
 # End secure_touch
 
-# CoverDisplay
-	chown system system /sys/devices/platform/soc/a80000.spi/spi_master/spi1/spi1.2/fw
-	chmod 664 /sys/devices/platform/soc/a80000.spi/spi_master/spi1/spi1.2/fw
-	chown system system /sys/devices/platform/soc/soc:gpio_keys/virtual_mcu_firmware_write
-	chmod 664 /sys/devices/platform/soc/soc:gpio_keys/virtual_mcu_firmware_write
-	chown system system /sys/devices/virtual/ice40_i2c/coverdisplay/FILE_ICE40_POLL
-	chmod 664 /sys/devices/virtual/ice40_i2c/coverdisplay/FILE_ICE40_POLL
-	chown system system /sys/devices/platform/soc/soc:gpio_keys/cover_fw_update
-	chmod 666 /sys/devices/platform/soc/soc:gpio_keys/cover_fw_update
-# CoverDisplay
-
 # START LED_driver
-	chown system system /sys/class/cover_led/rgb_led/led_pattern
-	chmod 664 /sys/class/cover_led/rgb_led/led_pattern
-	chown system system /sys/class/cover_led/rgb_led/led_blink
-	chmod 664 /sys/class/cover_led/rgb_led/led_blink
-	chown system system /sys/class/cover_led/rgb_led/pattern_onoff
-	chmod 664 /sys/class/cover_led/rgb_led/pattern_onoff
-	chown system system /sys/class/cover_led/rgb_led/led_init
-	chmod 664 /sys/class/cover_led/rgb_led/led_init
-	chown system system /sys/class/leds/CR/brightness
-	chmod 664 /sys/class/leds/CR/brightness
-	chown system system /sys/class/leds/CG/brightness
-	chmod 664 /sys/class/leds/CG/brightness
-	chown system system /sys/class/leds/CB/brightness
-	chmod 664 /sys/class/leds/CB/brightness
+  chown system system /sys/devices/virtual/lg_rgb_led/use_patterns/blink_patterns
+  chmod 0644 /sys/devices/virtual/lg_rgb_led/use_patterns/blink_patterns
+  chown system system /sys/devices/virtual/lg_rgb_led/use_patterns/input_patterns
+  chmod 0644 /sys/devices/virtual/lg_rgb_led/use_patterns/input_patterns
+  chown system system /sys/devices/virtual/lg_rgb_led/use_patterns/onoff_patterns
+  chmod 0644 /sys/devices/virtual/lg_rgb_led/use_patterns/onoff_patterns
+  chown system system /sys/devices/virtual/lg_rgb_led/use_patterns/setting
+  chmod 0644 /sys/devices/virtual/lg_rgb_led/use_patterns/setting
+  write /sys/devices/virtual/lg_rgb_led/use_patterns/setting 1
 # END LED_driver

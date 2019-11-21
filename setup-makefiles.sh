@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=judypn
+DEVICE=judyln
 VENDOR=lge
 
 INITIAL_COPYRIGHT_YEAR=2019

@@ -90,14 +90,6 @@ on boot
 
     # End Display Driver
 
-# Begin Immersion Changes
-service immvibed /vendor/bin/immvibed -p 99 -u 1000
-    class late_start
-    user root
-    group root
-    ioprio rt 4
-
 on post-fs
 # Support tuxera exfat filesystem
     insmod /vendor/lib/modules/texfat.ko
-

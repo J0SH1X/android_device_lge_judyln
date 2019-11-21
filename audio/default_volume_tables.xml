@@ -36,7 +36,7 @@
     <!-- Default Media reference Volume Curve -->
         <point>1,-5500</point>
         <point>20,-3800</point>
-        <point>60,-1950</point>
+        <point>55,-2000</point>
         <point>100,0</point>
     </reference>
     <reference name="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE">

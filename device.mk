@@ -17,9 +17,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/judypn/judypn-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/judyln/judypn-vendor.mk)
 
-DEVICE_PATH := device/lge/judypn
+DEVICE_PATH := device/lge/judyln
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -45,8 +45,8 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.judypn:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.judypn \
-    $(DEVICE_PATH)/rootdir/etc/ueventd.judypn.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
+    $(DEVICE_PATH)/rootdir/etc/fstab.judyln:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.judyln \
+    $(DEVICE_PATH)/rootdir/etc/ueventd.judyln.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
 $(foreach f,$(wildcard $(DEVICE_PATH)/rootdir/etc/init/hw/*.rc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
@@ -61,7 +61,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.judypn
+    android.hardware.light@2.0-service.judyln
 
 # NFC
 PRODUCT_COPY_FILES += \

@@ -152,19 +152,18 @@ volume index from 0 to 100.
     </reference>
     <reference name="DRC_SPK_ATTN_COMBO_CURVE">
     <!-- DRC SPK RING NOTI ALARM CURVE -->
-        <point>1,-4000</point>
-        <point>35,-3000</point>
-        <point>65,-2100</point>
-        <point>80,-1500</point>
-        <point>90,-1000</point>
+        <point>1,-3700</point>
+        <point>35,-2800</point>
+        <point>65,-2000</point>
+        <point>80,-1400</point>
         <point>100,-450</point>
     </reference>
     <reference name="DRC_SPK_ATTN_MEDIA_CURVE">
     <!--DRC SPK MEDIA CURVE -->
-        <point>1,-5100</point>
-        <point>20,-4200</point>
-        <point>60,-2600</point>
-        <point>90,-1000</point>
+        <point>1,-5600</point>
+        <point>20,-4550</point>
+        <point>60,-2700</point>
+        <point>85,-1300</point>
         <point>100,0</point>
     </reference>
 
@@ -186,13 +185,12 @@ volume index from 0 to 100.
         <point>85,-1300</point>
         <point>100,0</point>
     </reference>
-<reference name="NOTIFICATION_ONLY_HEADSET_VOLUME_CURVE">
+    <reference name="NOTIFICATION_ONLY_HEADSET_VOLUME_CURVE">
     <!-- Headset only NOTI CURVE Based on DRC_SPK_ATTN_COMBO_CURVE -->
-        <point>1,-4000</point>
-        <point>35,-3000</point>
-        <point>65,-2100</point>
-        <point>80,-1500</point>
-        <point>90,-1000</point>
+        <point>1,-3700</point>
+        <point>35,-2800</point>
+        <point>65,-2000</point>
+        <point>80,-1400</point>
         <point>100,-450</point>
     </reference>
 </volumes>

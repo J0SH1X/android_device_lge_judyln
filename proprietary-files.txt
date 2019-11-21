@@ -14,11 +14,7 @@ vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/libAutoContrast.so
 vendor/lib/libSJVideoNR.so
 vendor/lib/libarcsoft_beauty_picselfie.so
-vendor/lib/libarcsoft_dualcam_portraitlighting.so
-vendor/lib/libarcsoft_dualcam_refocus_front.so
-vendor/lib/libarcsoft_dualcam_refocus_rear_t.so
 vendor/lib/libarcsoft_dualcam_refocus.so
-vendor/lib/libarcsoft_makeup.so
 vendor/lib/libarcsoft_picselfie_algorithm.so
 vendor/lib/libbwfocuspeaking.so
 vendor/lib/libcamxfdalgov7.so
@@ -35,19 +31,30 @@ vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmorpho_image_stab31.so
 vendor/lib/libmorpho_superzoom.so
 vendor/lib/libmpbase.so
-vendor/lib/libCmcPdaf.so
-vendor/lib/libCmcPdaf_tele.so
-vendor/lib64/liblgdnn.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
-vendor/lib64/libstdc++.so
-vendor/lib/libstdc++.so
 
 # Camera - Automatic white-balance and exposure
 vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
+vendor/lib/camera/liblg_aec_param_imx351_binning_preview.so
+vendor/lib/camera/liblg_aec_param_imx351_binning_video.so
+vendor/lib/camera/liblg_aec_param_imx351_cine_video.so
+vendor/lib/camera/liblg_aec_param_imx351_hfr_120.so
+vendor/lib/camera/liblg_aec_param_imx351_hfr_240.so
+vendor/lib/camera/liblg_aec_param_imx351_hfr_60.so
+vendor/lib/camera/liblg_aec_param_imx351_hfr_90.so
+vendor/lib/camera/liblg_aec_param_imx351_out_focus.so
+vendor/lib/camera/liblg_aec_param_imx351_panorama.so
+vendor/lib/camera/liblg_aec_param_imx351_preview.so
+vendor/lib/camera/liblg_aec_param_imx351_sensor_hdr_auto_preview.so
+vendor/lib/camera/liblg_aec_param_imx351_sensor_hdr_auto_video.so
+vendor/lib/camera/liblg_aec_param_imx351_sensor_hdr_on_preview.so
+vendor/lib/camera/liblg_aec_param_imx351_sensor_hdr_on_video.so
+vendor/lib/camera/liblg_aec_param_imx351_uhfr_60.so
+vendor/lib/camera/liblg_aec_param_imx351_video.so
 vendor/lib/camera/liblg_aec_param_imx351w_binning_preview.so
 vendor/lib/camera/liblg_aec_param_imx351w_binning_video.so
 vendor/lib/camera/liblg_aec_param_imx351w_cine_video.so
@@ -64,36 +71,19 @@ vendor/lib/camera/liblg_aec_param_imx351w_sensor_hdr_on_preview.so
 vendor/lib/camera/liblg_aec_param_imx351w_sensor_hdr_on_video.so
 vendor/lib/camera/liblg_aec_param_imx351w_uhfr_60.so
 vendor/lib/camera/liblg_aec_param_imx351w_video.so
-vendor/lib/camera/liblg_aec_param_imx363_binning_preview.so
-vendor/lib/camera/liblg_aec_param_imx363_binning_video.so
-vendor/lib/camera/liblg_aec_param_imx363_cine_video.so
-vendor/lib/camera/liblg_aec_param_imx363_hfr_120.so
-vendor/lib/camera/liblg_aec_param_imx363_hfr_240.so
-vendor/lib/camera/liblg_aec_param_imx363_hfr_60.so
-vendor/lib/camera/liblg_aec_param_imx363_hfr_90.so
-vendor/lib/camera/liblg_aec_param_imx363_out_focus.so
-vendor/lib/camera/liblg_aec_param_imx363_panorama.so
-vendor/lib/camera/liblg_aec_param_imx363_preview.so
-vendor/lib/camera/liblg_aec_param_imx363_sensor_hdr_auto_preview.so
-vendor/lib/camera/liblg_aec_param_imx363_sensor_hdr_auto_video.so
-vendor/lib/camera/liblg_aec_param_imx363_sensor_hdr_on_preview.so
-vendor/lib/camera/liblg_aec_param_imx363_sensor_hdr_on_video.so
-vendor/lib/camera/liblg_aec_param_imx363_video.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_binning_preview.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_binning_video.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_cine_video.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_hfr_120.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_hfr_240.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_hfr_60.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_hfr_90.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_out_focus.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_panorama.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_preview.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_sensor_hdr_auto_preview.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_sensor_hdr_auto_video.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_sensor_hdr_on_preview.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_sensor_hdr_on_video.so
-vendor/lib/camera/liblg_aec_param_s5k3m5_video.so
+vendor/lib/camera/liblg_awb_param_imx351n_food.so
+vendor/lib/camera/liblg_awb_param_imx351n_liveshot.so
+vendor/lib/camera/liblg_awb_param_imx351n_outfocus.so
+vendor/lib/camera/liblg_awb_param_imx351n_panorama_lg.so
+vendor/lib/camera/liblg_awb_param_imx351n_preview.so
+vendor/lib/camera/liblg_awb_param_imx351n_rec_cinema.so
+vendor/lib/camera/liblg_awb_param_imx351n_rec_food.so
+vendor/lib/camera/liblg_awb_param_imx351n_rec_outfocus.so
+vendor/lib/camera/liblg_awb_param_imx351n_rec_sum_binning.so
+vendor/lib/camera/liblg_awb_param_imx351n_snapshot.so
+vendor/lib/camera/liblg_awb_param_imx351n_sum_binning.so
+vendor/lib/camera/liblg_awb_param_imx351n_video.so
+vendor/lib/camera/liblg_awb_param_imx351n_zsl.so
 vendor/lib/camera/liblg_awb_param_imx351w_food.so
 vendor/lib/camera/liblg_awb_param_imx351w_liveshot.so
 vendor/lib/camera/liblg_awb_param_imx351w_outfocus.so
@@ -107,51 +97,17 @@ vendor/lib/camera/liblg_awb_param_imx351w_snapshot.so
 vendor/lib/camera/liblg_awb_param_imx351w_sum_binning.so
 vendor/lib/camera/liblg_awb_param_imx351w_video.so
 vendor/lib/camera/liblg_awb_param_imx351w_zsl.so
-vendor/lib/camera/liblg_awb_param_imx363n_food.so
-vendor/lib/camera/liblg_awb_param_imx363n_liveshot.so
-vendor/lib/camera/liblg_awb_param_imx363n_outfocus.so
-vendor/lib/camera/liblg_awb_param_imx363n_panorama_lg.so
-vendor/lib/camera/liblg_awb_param_imx363n_preview.so
-vendor/lib/camera/liblg_awb_param_imx363n_rec_cinema.so
-vendor/lib/camera/liblg_awb_param_imx363n_rec_food.so
-vendor/lib/camera/liblg_awb_param_imx363n_rec_outfocus.so
-vendor/lib/camera/liblg_awb_param_imx363n_rec_sum_binning.so
-vendor/lib/camera/liblg_awb_param_imx363n_snapshot.so
-vendor/lib/camera/liblg_awb_param_imx363n_sum_binning.so
-vendor/lib/camera/liblg_awb_param_imx363n_video.so
-vendor/lib/camera/liblg_awb_param_imx363n_zsl.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_food.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_liveshot.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_outfocus.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_panorama_lg.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_preview.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_rec_cinema.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_rec_food.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_rec_outfocus.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_rec_sum_binning.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_snapshot.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_sum_binning.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_video.so
-vendor/lib/camera/liblg_awb_param_s5k3m5t_zsl.so
+
 vendor/lib/camera/titan17x_usecases.bin
 vendor/lib/liblgae_main.so
 vendor/lib/liblgawb_main.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/lib.com.lge.elvis.so
-vendor/lib/libSRIyuv.so
 vendor/lib/lib_wdr2.so
-vendor/lib/liblgsnpeawb.so
-vendor/lib/libSNPE.so
-vendor/lib/libc++_shared_snpe.so
-vendor/lib64/liblgawb_main.so
-vendor/lib64/libc++_shared_snpe.so
 
 # Camera - components
 vendor/lib/camera/components/com.lge.node.camerasolution.so
 vendor/lib/camera/components/com.lge.node.capturebokeh.so
-vendor/lib/camera/components/com.lge.node.dupis.so
-vendor/lib/camera/components/com.lge.node.duvis.so
-vendor/lib/camera/components/com.lge.node.elpis.so
 vendor/lib/camera/components/com.lge.node.elvis.so
 vendor/lib/camera/components/com.lge.node.hdr.so
 vendor/lib/camera/components/com.lge.node.lavis.so
@@ -189,42 +145,23 @@ vendor/lib/camera/components/com.qti.stats.pdlib.so
 vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 
+
 # Camera - Sensor
 vendor/lib/camera/com.qti.sensor.imx351.so
-vendor/lib/camera/com.qti.sensor.imx363.so
-vendor/lib/camera/com.qti.sensor.s5k3m5.so
-vendor/lib/camera/com.qti.sensor.sl556.so
+vendor/lib/camera/com.qti.sensor.imx351_wide.so
 vendor/lib/camera/com.qti.sensor.sl846.so
 
 # Camera - Sensormodule
 vendor/lib/camera/com.qti.sensormodule.imx351.bin
-vendor/lib/camera/com.qti.sensormodule.imx363.bin
-vendor/lib/camera/com.qti.sensormodule.s5k3m5.bin
-vendor/lib/camera/com.qti.sensormodule.sl556.bin
+vendor/lib/camera/com.qti.sensormodule.imx351_wide.bin
 vendor/lib/camera/com.qti.sensormodule.sl846.bin
-vendor/lib64/camera/com.qti.sensormodule.imx351.bin
-vendor/lib64/camera/com.qti.sensormodule.imx363.bin
-vendor/lib64/camera/com.qti.sensormodule.s5k3m5.bin
-vendor/lib64/camera/com.qti.sensormodule.sl556.bin
-vendor/lib64/camera/com.qti.sensormodule.sl846.bin
 
 # Camera - tuned
 vendor/etc/camera/camera_tune_config.xml
 vendor/lib/camera/com.qti.tuned.default.bin
 vendor/lib/camera/com.qti.tuned.imx351.bin
-vendor/lib/camera/com.qti.tuned.imx363.bin
-vendor/lib/camera/com.qti.tuned.s5k3m5.bin
-vendor/lib/camera/com.qti.tuned.sl556.bin
-vendor/lib/camera/com.qti.tuned.sl556_tmus.bin
+vendor/lib/camera/com.qti.tuned.imx351_wide.bin
 vendor/lib/camera/com.qti.tuned.sl846.bin
-vendor/lib/camera/com.qti.tuned.sl846_tmus.bin
-vendor/lib64/camera/com.qti.tuned.imx351.bin
-vendor/lib64/camera/com.qti.tuned.imx363.bin
-vendor/lib64/camera/com.qti.tuned.s5k3m5.bin
-vendor/lib64/camera/com.qti.tuned.sl556.bin
-vendor/lib64/camera/com.qti.tuned.sl556_tmus.bin
-vendor/lib64/camera/com.qti.tuned.sl846.bin
-vendor/lib64/camera/com.qti.tuned.sl846_tmus.bin
 
 # Configstore
 vendor/bin/hw/vendor.lge.hardware.configstore@1.0-service
@@ -305,9 +242,7 @@ vendor/bin/chre
 vendor/lib/libfastcrc.so
 vendor/lib/libfastcvdsp_stub.so
 vendor/lib/libsymphony-1.1.4.so
-vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower-1.1.4.so
-vendor/lib/libsymphonypower.so
 vendor/lib/rfsa/adsp/activity.so
 vendor/lib/rfsa/adsp/AlacDecoderModule.so.1
 vendor/lib/rfsa/adsp/ApeDecoderModule.so.1
@@ -329,8 +264,6 @@ vendor/lib/rfsa/adsp/fluence_voiceplus_module.so.1
 vendor/lib/rfsa/adsp/geofence.so
 vendor/lib/rfsa/adsp/HeaacDecoderModule.so.1
 vendor/lib/rfsa/adsp/LdacModule.so.1
-vendor/lib/rfsa/adsp/lg_nanoapp_pa.so
-vendor/lib/rfsa/adsp/lg_nanoapp_sbd.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libchre_slpi_skel.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
@@ -360,9 +293,7 @@ vendor/lib/rfsa/adsp/WmaProDecoderModule.so.1
 vendor/lib/rfsa/adsp/WmaStdDecoderModule.so.1
 vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libsymphony-1.1.4.so
-vendor/lib64/libsymphony-cpu.so
 vendor/lib64/libsymphonypower-1.1.4.so
-vendor/lib64/libsymphonypower.so
 
 # Fingerprint
 vendor/bin/hw/vendor.lge.hardware.biometrics.fingerprint@2.1-service
@@ -376,12 +307,9 @@ vendor/lib/hw/fingerprint.sdm845.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/libgf_hal.so
 vendor/lib/libgf_algo.so
-vendor/usr/idc/goodix_fp_key.idc
-vendor/usr/keylayout/goodix_fp_key.kl
 
 # Firmware (Audio)
 vendor/firmware/Tfa9872.cnt
-vendor/firmware/Tfa9872_ras.cnt
 
 # Firmware (Bluetooth)
 vendor/firmware/crbtfw21.tlv
@@ -447,9 +375,12 @@ vendor/etc/wifi/GLOBAL/bdwlan_ch1.bin
 vendor/etc/wifi/KR_ALL/bdwlan.bin
 vendor/etc/wifi/KR_ALL/bdwlan_ch0.bin
 vendor/etc/wifi/KR_ALL/bdwlan_ch1.bin
-vendor/etc/wifi/NA_ALL/bdwlan.bin
-vendor/etc/wifi/NA_ALL/bdwlan_ch0.bin
-vendor/etc/wifi/NA_ALL/bdwlan_ch1.bin
+vendor/etc/wifi/NA_CDMA/bdwlan.bin
+vendor/etc/wifi/NA_CDMA/bdwlan_ch0.bin
+vendor/etc/wifi/NA_CDMA/bdwlan_ch1.bin
+vendor/etc/wifi/NA_GSM/bdwlan.bin
+vendor/etc/wifi/NA_GSM/bdwlan_ch0.bin
+vendor/etc/wifi/NA_GSM/bdwlan_ch1.bin
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -489,7 +420,8 @@ vendor/etc/qdcm_calib_data_Dual_nt35597_video_mode_dsi_truly_panel_without_DSC.x
 vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_SW43408A_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_SW49409_1440_2880_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_SW49410_1440_3120_cmd_mode_dsc_dsi_panel.xml
 
 # SCVE
 vendor/lib64/libscveBlobDescriptor.so
@@ -571,20 +503,29 @@ vendor/lib/libsensor_lge_cal.so
 # Sensors configs
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/registry/config/ak991x_dri_0.json
-vendor/etc/sensors/registry/config/apds9160_0.json
+vendor/etc/sensors/registry/config/apds9160_0_reva.json
+vendor/etc/sensors/registry/config/apds9160_0_revc.json
+vendor/etc/sensors/registry/config/apds9160_0_revd_sub1.json
+vendor/etc/sensors/registry/config/apds9160_0_revd_sub2.json
+vendor/etc/sensors/registry/config/apds9939_0.json
+vendor/etc/sensors/registry/config/bmp285_0.json
+vendor/etc/sensors/registry/config/etc_version
 vendor/etc/sensors/registry/config/icm4x6xx_0.json
+vendor/etc/sensors/registry/config/icm4x6xx_0_reva.json
+vendor/etc/sensors/registry/config/lsm6ds3_0.json
+vendor/etc/sensors/registry/config/lsm6dsm_0.json
 vendor/etc/sensors/registry/config/sdm845_ak991x_0.json
-vendor/etc/sensors/registry/config/sdm845_ak991x_0_rev1_0.json
-vendor/etc/sensors/registry/config/sdm845_ak991x_0_reva.json
-vendor/etc/sensors/registry/config/sdm845_apds9160_0.json
+vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva.json
+vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva_sub1.json
+vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva_sub2.json
+vendor/etc/sensors/registry/config/sdm845_apds9939_0.json
+vendor/etc/sensors/registry/config/sdm845_bmp285_0.json
 vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0.json
-vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0_reva_kor.json
-vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0_reva_na.json
-vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0_revc_na.json
-vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0_revd_kor.json
+vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0_reva.json
+vendor/etc/sensors/registry/config/sdm845_lsm6dsm_0.json
 vendor/etc/sensors/registry/config/sdm845_power_0.json
 vendor/etc/sensors/registry/config/sdm845_spl06_0.json
-vendor/etc/sensors/registry/config/sdm845_tmd3727.json
+vendor/etc/sensors/registry/config/sdm845_tmx4903.json
 vendor/etc/sensors/registry/config/sensors_list.txt
 vendor/etc/sensors/registry/config/sns_amd.json
 vendor/etc/sensors/registry/config/sns_amd_sw_disabled.json
@@ -614,7 +555,7 @@ vendor/etc/sensors/registry/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/registry/config/sns_tilt_to_wake.json
 vendor/etc/sensors/registry/config/sns_window_orientation.json
 vendor/etc/sensors/registry/config/spl06_0.json
-vendor/etc/sensors/registry/config/tmd3727.json
+vendor/etc/sensors/registry/config/tmx4903.json
 vendor/etc/sensors/registry/registry/sensors_registry
 vendor/etc/sensors/registry/registry/sensors_settings
 vendor/etc/sensors/registry/sns_reg_config

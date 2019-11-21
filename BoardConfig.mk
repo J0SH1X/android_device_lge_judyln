@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/judypn
+DEVICE_PATH := device/lge/judyln
 
-# inherit from common v30
+# inherit from common v40
 -include device/lge/sdm845-common/BoardConfigCommon.mk
 
 # Bluetooth
@@ -30,8 +30,8 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hardware=judypn
-TARGET_KERNEL_CONFIG := lineageos_judypn_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
+TARGET_KERNEL_CONFIG := lineageos_judyln_defconfig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 113775689728
@@ -48,10 +48,10 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judypn
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2019-07-01
 
 # inherit from the proprietary version
--include vendor/lge/judypn/BoardConfigVendor.mk
+-include vendor/lge/judyln/BoardConfigVendor.mk
