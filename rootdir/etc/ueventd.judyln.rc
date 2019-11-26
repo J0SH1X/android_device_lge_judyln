@@ -306,10 +306,10 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/mobicore             0600   system     system
 /dev/mobicore-user        0666   system     system
 
-/*
+
 # TDMB
 /dev/broadcast0           0660   media      media
 
 # LGDDM
 /dev/lge_ddm_tty0         0660   system     system
-*/
+
