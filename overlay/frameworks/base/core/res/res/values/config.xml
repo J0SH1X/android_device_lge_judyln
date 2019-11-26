@@ -33,7 +33,7 @@
     <integer name="config_screenBrightnessDim">10</integer>
 
     <!-- Enable auto brightness while Dozing -->
-    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+    <bool name="config_allowAutoBrightnessWhileDozing">false</bool>
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
