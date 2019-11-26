@@ -33,4 +33,4 @@
 /dev/block/bootdevice/by-name/persdata                                  /mnt/vendor/absolute        ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue    wait,check,formattable
 # /dev/block/bootdevice/by-name/OP                                        /oem/OP             ext4    ro,noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,context=u:object_r:op_file:s0    wait,slotselect
 /dev/cnas                                                               auto                auto    defaults                                                voldmanaged=cnas:auto
-/dev/block/zram0           
+/dev/block/zram0                                                        none                swap    defaults                                                zramsize=2147483648,max_comp_streams=8
