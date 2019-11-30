@@ -16,7 +16,7 @@ on property:sys.boot_completed=1
 service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.judyln
     interface android.hardware.light@2.0::ILight default
     class hal
-    user system
+    user root
     group system
     # shutting off lights while powering-off
     shutdown critical
