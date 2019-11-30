@@ -31,6 +31,7 @@ vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmorpho_image_stab31.so
 vendor/lib/libmorpho_superzoom.so
 vendor/lib/libmpbase.so
+vendor/lib/sensors.hal.tof.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 
@@ -104,6 +105,8 @@ vendor/lib/liblgawb_main.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/lib.com.lge.elvis.so
 vendor/lib/lib_wdr2.so
+
+vendor/etc/camera/wb_graph_imx351.pb
 
 # Camera - components
 vendor/lib/camera/components/com.lge.node.camerasolution.so
@@ -301,10 +304,14 @@ vendor/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib64/hw/fingerprint.sdm845.so
 vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib64/libfpfactory.so
+vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgf_algo.so
 vendor/lib/hw/fingerprint.sdm845.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib/libfpfactory.so
+vendor/lib/libgf_ca.so
 vendor/lib/libgf_hal.so
 vendor/lib/libgf_algo.so
 
