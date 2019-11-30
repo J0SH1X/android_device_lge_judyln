@@ -21,7 +21,6 @@ cc_binary {
     init_rc: ["android.hardware.light@2.0-service.judyln.rc"],
     srcs: ["service.cpp", "Light.cpp"],
     shared_libs: [
-	"libcutils",
         "libbase",
         "libhardware",
         "libhidlbase",
