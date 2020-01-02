@@ -567,3 +567,6 @@ vendor/etc/sensors/registry/registry/sensors_registry
 vendor/etc/sensors/registry/registry/sensors_settings
 vendor/etc/sensors/registry/sns_reg_config
 vendor/etc/sensors/sns_reg_config
+
+# Thermal
+vendor/etc/thermal-engine-845.conf
