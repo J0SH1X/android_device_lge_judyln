@@ -8,6 +8,8 @@ on boot
     chmod 0644 /sys/devices/virtual/lg_rgb_led/use_patterns/onoff_patterns
     chown system system /sys/devices/virtual/lg_rgb_led/use_patterns/setting
     chmod 0644 /sys/devices/virtual/lg_rgb_led/use_patterns/setting
+    chown system system /sys/class/leds/wled/brightness
+    chmod 0644 /sys/class/leds/wled/brightness
     write /sys/devices/virtual/lg_rgb_led/use_patterns/setting 1
 
 on property:sys.boot_completed=1
