@@ -166,6 +166,9 @@ vendor/lib/camera/com.qti.tuned.imx351.bin
 vendor/lib/camera/com.qti.tuned.imx351_wide.bin
 vendor/lib/camera/com.qti.tuned.sl846.bin
 
+# Camera - HDR
+vendor/etc/camera/vnr/SJ_VideoNR_LUT.bin
+
 # Configstore
 vendor/bin/hw/vendor.lge.hardware.configstore@1.0-service
 vendor/etc/init/vendor.lge.hardware.configstore@1.0-service.rc
@@ -567,6 +570,3 @@ vendor/etc/sensors/registry/registry/sensors_registry
 vendor/etc/sensors/registry/registry/sensors_settings
 vendor/etc/sensors/registry/sns_reg_config
 vendor/etc/sensors/sns_reg_config
-
-# Thermal
-vendor/etc/thermal-engine-845.conf
