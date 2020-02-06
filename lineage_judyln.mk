@@ -52,9 +52,9 @@ TARGET_VENDOR_DEVICE_NAME := judyln
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=judyln \
     PRODUCT_NAME=judyln_lao_com \
-    PRIVATE_BUILD_DESC="judyln_lao_com-user 9 PKQ1.181105.001 192481510af51 release-keys"
+    PRIVATE_BUILD_DESC="judyln_lao_com-user 9 PKQ1.181105.001 193300114dd82 release-keys"
 
-BUILD_FINGERPRINT="lge/judyln_lao_com/judyln:9/PKQ1.181105.001/192481510af51:user/release-keys"
+BUILD_FINGERPRINT="lge/judyln_lao_com/judyln:9/PKQ1.181105.001/193300114dd82:user/release-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model \
