@@ -155,6 +155,7 @@
             <name>IKeymasterDevice</name>
             <instance>default</instance>
         </interface>
+        <fqname>@3.0::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.light</name>
