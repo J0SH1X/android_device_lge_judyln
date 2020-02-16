@@ -70,8 +70,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.judyln
 
 # Keymaster 4
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc
+#PRODUCT_COPY_FILES += \
+#    $(DEVICE_PATH)/configs/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 
 # NFC
 PRODUCT_COPY_FILES += \
