@@ -128,27 +128,7 @@
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
          This array should be equal in size to config_screenBrightnessBacklight. -->
-    <integer-array name="config_screenBrightnessBacklight">
-        <item>10</item>
-        <item>40</item>
-        <item>72</item>
-        <item>98</item>
-        <item>120</item>
-        <item>142</item>
-        <item>150</item>
-        <item>162</item>
-        <item>177</item>
-        <item>207</item>
-        <item>255</item>
-    </integer-array>
-
-    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
-         values in the config_screenBrightnessBacklight array.  On OLED displays these  values
-         should be measured with an all white image while the display is in the fully on state.
-         Note that this value should *not* reflect the maximum brightness value for any high
-         brightness modes but only the maximum brightness value obtainable in a sustainable manner.
-         This array should be equal in size to config_screenBrightnessBacklight -->
-    <array name="config_screenBrightnessNits">
+   <integer-array name="config_screenBrightnessBacklight">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -217,6 +197,84 @@
         <item>244</item>
         <item>249</item>
         <item>255</item>
+    </integer-array>
+
+
+    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+         values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+         should be measured with an all white image while the display is in the fully on state.
+         Note that this value should *not* reflect the maximum brightness value for any high
+         brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+         This array should be equal in size to config_screenBrightnessBacklight -->
+    <array name="config_screenBrightnessNits">
+        <item>2.0482</item>
+        <item>2.7841</item>
+        <item>3.79505</item>
+        <item>4.4748</item>
+        <item>5.08</item>
+        <item>6.4233</item>
+        <item>8.0848</item>
+        <item>11.6607</item>
+        <item>13.2347</item>
+        <item>15.0676</item>
+        <item>16.8302</item>
+        <item>18.4261</item>
+        <item>20.3103</item>
+        <item>21.9042</item>
+        <item>23.5456</item>
+        <item>25.2137</item>
+        <item>27.1769</item>
+        <item>28.9571</item>
+        <item>30.5244</item>
+        <item>32.3535</item>
+        <item>34.0867</item>
+        <item>42.366</item>
+        <item>51.1309</item>
+        <item>59.52</item>
+        <item>67.744</item>
+        <item>75.9738</item>
+        <item>84.6332</item>
+        <item>94.1525</item>
+        <item>102.2207</item>
+        <item>110.4878</item>
+        <item>117.0405</item>
+        <item>124.3733</item>
+        <item>130.9928</item>
+        <item>140.4247</item>
+        <item>149.3156</item>
+        <item>157.1995</item>
+        <item>165.3651</item>
+        <item>173.2726</item>
+        <item>181.4272</item>
+        <item>189.1402</item>
+        <item>197.5334</item>
+        <item>205.6301</item>
+        <item>213.9381</item>
+        <item>222.2769</item>
+        <item>230.0891</item>
+        <item>238.6084</item>
+        <item>246.5399</item>
+        <item>255.6544</item>
+        <item>263.6221</item>
+        <item>271.9324</item>
+        <item>279.1449</item>
+        <item>288.5736</item>
+        <item>297.6628</item>
+        <item>306.1899</item>
+        <item>314.4511</item>
+        <item>322.1404</item>
+        <item>330.969</item>
+        <item>338.2251</item>
+        <item>346.2251</item>
+        <item>354.567</item>
+        <item>370.799</item>
+        <item>413.1738</item>
+        <item>415.6397</item>
+        <item>417.264</item>
+        <item>419.264</item>
+        <item>421.264</item>
+        <item>424.646</item>
+        <item>427.6287</item>
     </array>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
@@ -228,7 +286,7 @@
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>17</item>
+        <item>19</item>
     </integer-array>
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
@@ -242,13 +300,13 @@
         <item>0</item>
         <item>15</item>
         <item>10</item>
-        <item>10</item>
+        <item>7</item>
     </integer-array>
 
     <!-- Enable system navigation keys. -->
     <bool name="config_supportSystemNavigationKeys">true</bool>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveNotificationLed">true</bool>
+    <bool name="config_intrusiveNotificationLed">false</bool>
 
 </resources>
