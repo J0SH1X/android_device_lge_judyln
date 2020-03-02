@@ -95,10 +95,10 @@ on early-boot
 
 on boot
 # DAC Control
-    chmod 0660 /sys/devices/platform/soc/a90000.i2c/i2c-4/4-0048/headset_type
-    chmod 0660 /sys/devices/platform/soc/a90000.i2c/i2c-4/4-0048/avc_volume
-    chown system system /sys/devices/platform/soc/a90000.i2c/i2c-4/4-0048/headset_type
-    chown system system /sys/devices/platform/soc/a90000.i2c/i2c-4/4-0048/avc_volume
+    chmod 0660 /sys/devices/platform/soc/a90000.i2c/i2c-3/3-0048/headset_type
+    chmod 0660 /sys/devices/platform/soc/a90000.i2c/i2c-3/3-0048/avc_volume
+    chown system system /sys/devices/platform/soc/a90000.i2c/i2c-3/3-0048/headset_type
+    chown system system /sys/devices/platform/soc/a90000.i2c/i2c-3/3-0048/avc_volume
 
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
