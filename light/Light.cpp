@@ -1,4 +1,4 @@
-/*
++/*
  * Copyright (C) 2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@
 #include <log/log.h>
 
 #define LCD_BRIGHTNESS_MIN 1 // Matches config_screenBrightnessSettingMinimum
-#define LCD_BRIGHTNESS_MAX 255
+#define LCD_BRIGHTNESS_MAX 4096
 #define LCD_BRIGHTNESS_DELTA (LCD_BRIGHTNESS_MAX - LCD_BRIGHTNESS_MIN)
 
 
