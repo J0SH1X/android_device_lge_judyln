@@ -50,8 +50,5 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
 
-# Security Patch Level
-VENDOR_SECURITY_PATCH := 2029-07-01
-
 # inherit from the proprietary version
 -include vendor/lge/judyln/BoardConfigVendor.mk
