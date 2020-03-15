@@ -21,11 +21,6 @@ $(call inherit-product-if-exists, vendor/lge/judyln/judyln-vendor.mk)
 
 DEVICE_PATH := device/lge/judyln
 
-# Include gapps if present
-$(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
-GAPPS_VARIANT := pico
-#GAPPS_EXCLUDED_PACKAGES += AndroidMigratePrebuilt
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \

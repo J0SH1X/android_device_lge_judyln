@@ -23,7 +23,6 @@
 #/dev/block/bootdevice/by-name/oem                                       /oem                ext4    ro,noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,context=u:object_r:op_file:s0    wait,slotselect
 /dev/block/bootdevice/by-name/els                                       /mnt/product/els         ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue    wait,check,formattable
 /dev/block/bootdevice/by-name/sns                                       /mnt/vendor/sns          ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue    wait,check,formattable
-/dev/block/bootdevice/by-name/drm                                       /mnt/vendor/persist-lg   ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue    wait,check,formattable
 /dev/block/bootdevice/by-name/mpt                                       /mnt/vendor/mpt          ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue    wait,check,formattable
 /dev/block/bootdevice/by-name/srtc                                      /mnt/product/srtc        ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue    wait,check,formattable
 /dev/block/bootdevice/by-name/power                                     /mnt/vendor/power        ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue    wait,check,formattable

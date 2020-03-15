@@ -21,6 +21,8 @@ DEVICE_PATH := device/lge/judyln
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+BTHW_FW_EXTENDED_CONFIGURATION := true
+BTHW_FW_EXTENDED_CONFIGURATION_ONLY_I2SPCM_CONFIG = := false
 
 # Camera
 TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
@@ -31,7 +33,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
-TARGET_KERNEL_CONFIG := lineageos_judyln_defconfig
+TARGET_KERNEL_CONFIG := judyln_lao_com-perf_defconfig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 48708296704
