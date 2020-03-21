@@ -13,15 +13,10 @@
 // limitations under the License.
 
 cc_defaults {
-    name: "livedisplay_sysfs_defaults",
+    name: "livedisplay_sysfs_defaults.judyln",
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
-        "AdaptiveBacklight.cpp",
-        "AutoContrast.cpp",
-        "ColorEnhancement.cpp",
-        "DisplayColorCalibration.cpp",
-        "ReadingEnhancement.cpp",
         "SunlightEnhancement.cpp",
         "service.cpp",
     ],
@@ -37,15 +32,15 @@ cc_defaults {
 }
 
 cc_binary {
-    name: "lineage.livedisplay@2.0-service-sysfs",
-    init_rc: ["lineage.livedisplay@2.0-service-sysfs.rc"],
-    defaults: ["livedisplay_sysfs_defaults"],
+    name: "lineage.livedisplay@2.0-service-sysfs.judyln",
+    init_rc: ["lineage.livedisplay@2.0-service-sysfs.judyln.rc"],
+    defaults: ["livedisplay_sysfs_defaults.judyln"],
     cflags: ["-DLIVES_IN_SYSTEM"],
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.0-service-sysfs",
-    init_rc: ["vendor.lineage.livedisplay@2.0-service-sysfs.rc"],
-    defaults: ["livedisplay_sysfs_defaults"],
+    name: "vendor.lineage.livedisplay@2.0-service-sysfs.judyln",
+    init_rc: ["vendor.lineage.livedisplay@2.0-service-sysfs.judyln.rc"],
+    defaults: ["livedisplay_sysfs_defaults.judyln"],
     vendor: true,
 }
