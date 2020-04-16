@@ -27,10 +27,6 @@ BTHW_FW_EXTENDED_CONFIGURATION_ONLY_I2SPCM_CONFIG = := false
 # Camera
 TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
 
-# HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
-
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
 TARGET_KERNEL_CONFIG := judyln_lao_com-perf_defconfig
