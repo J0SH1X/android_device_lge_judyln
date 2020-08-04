@@ -3,6 +3,10 @@
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    
+    symlink /dev/block/bootdevice/by-name/OP /dev/block/bootdevice/by-name/product
+    symlink /dev/block/bootdevice/by-name/OP_a /dev/block/bootdevice/by-name/product_a
+    symlink /dev/block/bootdevice/by-name/OP_b /dev/block/bootdevice/by-name/product_b
 
     mount_all /vendor/etc/fstab.${ro.hardware}
     swapon_all /vendor/etc/fstab.${ro.hardware}
