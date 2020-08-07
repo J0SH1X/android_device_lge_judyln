@@ -21,6 +21,11 @@ $(call inherit-product-if-exists, vendor/lge/judyln/judyln-vendor.mk)
 
 DEVICE_PATH := device/lge/judyln
 
+
+# Dex-PreOpt
+PRODUCT_PACKAGES += \
+    cppreopts.sh
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
