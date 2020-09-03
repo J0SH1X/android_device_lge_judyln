@@ -62,7 +62,11 @@ PRODUCT_COPY_FILES += \
 # NFC
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    $(DEVICE_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+    $(DEVICE_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    $(DEVICE_PATH)/nfc/libnfc-nxp-hk.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp-hk.conf \
+    $(DEVICE_PATH)/nfc/libnfc-nxp-KR.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp-KR.conf \
+    $(DEVICE_PATH)/nfc/libnfc-nxp-lg.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp-lg.conf \
+    $(DEVICE_PATH)/nfc/libnfc-nxp-US.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp-US.conf \
 
 # Permissions
 PRODUCT_COPY_FILES += \
