@@ -1,4 +1,0 @@
-on boot
-    chown system system /mnt/vendor/persist-lg/property/persist.sys.lg.sound_enable
-    chown system system /mnt/vendor/persist-lg/property/persist.sys.lg.fota_silent
-    chown system system /mnt/vendor/persist-lg/property/persist.sys.lg.resolution
