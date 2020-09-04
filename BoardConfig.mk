@@ -35,12 +35,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 48708296704
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1048576000
 
-BOARD_ROOT_EXTRA_FOLDERS := oem persdata
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/eri:/eri \
-    /mnt/vendor/absolute:/persdata/absolute \
-    /vendor/firmware_mnt:/firmware
-
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
 TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/ramdisk-recovery.cpio
