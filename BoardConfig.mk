@@ -37,7 +37,10 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1048576000
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
-TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/ramdisk-recovery.cpio
+TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
+
+# Security Patch Level
+VENDOR_SECURITY_PATCH := 2020-01-01
 
 # inherit from the proprietary version
 -include vendor/lge/judyln/BoardConfigVendor.mk
