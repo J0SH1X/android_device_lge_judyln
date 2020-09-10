@@ -29,8 +29,7 @@ TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
-TARGET_KERNEL_CONFIG := judyln_lao_com-perf_defconfig
-
+TARGET_KERNEL_CONFIG := lineageos_judyln-defconfig
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 48708296704
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -38,9 +37,6 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1048576000
 
 BOARD_ROOT_EXTRA_FOLDERS := oem persdata
 BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/persist:/persist \
-    /mnt/product/carrier:/carrier \
-    /vendor/dps:/dsp \
     /mnt/vendor/eri:/eri \
     /mnt/vendor/absolute:/persdata/absolute \
     /vendor/firmware_mnt:/firmware
