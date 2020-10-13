@@ -1,5 +1,8 @@
 #
 # system props for judyln
 #
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://raw.githubusercontent.com/J0SH1X/Lineage-OTA/master/judyln.json
+
+# Voice Assistant
+ro.opa.device_model_id=v40-deviceaction-v40-hno4u3
+
+lineage.updater.uri=https://raw.githubusercontent.com/J0SH1X/Lineage-OTA/master/judyln.json

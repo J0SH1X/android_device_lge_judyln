@@ -1,3 +1,16 @@
 #
 # vendor props for judyln
 #
+
+# Camera
+persist.camera.hdr.video=2
+ro.vendor.lge.logical.camera=1
+ro.vendor.lge.physical.camera=3
+vendor.lge.faceprint.inform.camera=0
+vendor.lge.faceprint.use.camera=0
+
+# Misc
+ro.vendor.lge.build.target_country=COM
+ro.vendor.lge.build.target_operator=LAO
+ro.vendor.lge.capp_cupss.rootdir=/oem/OP
+ro.vendor.lge.swversion=G71030b
